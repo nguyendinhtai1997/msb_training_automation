@@ -1,0 +1,3 @@
+*** Variables ***
+
+${customer_id}
