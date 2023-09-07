@@ -1,0 +1,21 @@
+1694090076661	geckodriver	INFO	Listening on 127.0.0.1:59303
+1694090079753	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59304" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LAXBAO~1\\AppData\\Local\\Temp\\rust_mozprofileGpAWDG"
+1694090079937	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Lax Baor Trung\\AppData\\Local\\Temp\\rust_mozprofileGpAWDG\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59304/devtools/browser/fee0bf08-e4a2-47e2-9d9e-9d2aaa2bb040
+1694090081391	Marionette	INFO	Listening on port 59326
+Read port: 59326
+1694090081432	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1694090082624	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/YBinSErTekvxupjb6vinQNaPBzh8KEiIox6QinbqyX4.js line 2 > eval line 5946 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1694090089721	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1694090090822	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/YBinSErTekvxupjb6vinQNaPBzh8KEiIox6QinbqyX4.js line 2 > eval line 1576 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://demo.guru99.com"
+JavaScript error: https://demo.guru99.com/telecom/addcustomer.php, line 76: ReferenceError: v6 is not defined
+1694090098356	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://demo.guru99.com"
+1694090099389	Marionette	INFO	Stopped listening on port 59326
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

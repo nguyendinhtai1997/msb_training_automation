@@ -34,11 +34,12 @@ Input form Billing address
     Input Text    ${locator_phone}    ${phone}
 
 Get Customer ID
-    [Arguments]    ${locator}
+    [Arguments]    ${locator}    ${timeout}
+    Wait Until Element Is Visible    ${locator}    ${timeout}
     ${value}=    Get Text    ${locator}
-    Set Share Variable    ${value}
+    [Return]    ${value}
 
 Set Customer ID
-    [Arguments]    ${locator}
-    ${value}    Get Share Variable
+    [Arguments]    ${locator}    ${value}    ${timeout}
+    Wait Until Element Is Visible    ${locator}    ${timeout}
     Input Text    ${locator}    ${value}

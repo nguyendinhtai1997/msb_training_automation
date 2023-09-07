@@ -34,10 +34,10 @@ ${timeout}    20s
     ...    ${inp_phone}    
     ...    ${phone}
     Find and select Element    ${btn_submit}    ${timeout}
-    Get Customer ID    ${customer_id}
+    ${customerId}=    Get Customer ID    ${customer_id}    ${timeout}
     Find and select Element    ${btn_home}    ${timeout}
     Find and select Element    ${a_ATB_Customer}    ${timeout}
-    Set Customer ID    ${inp_customerid}
+    Set Customer ID    ${inp_customerid}    ${customerId}    ${timeout}
     Find and select Element    ${btn_submit2}    ${timeout}
     Verify result    ${text_Approved}    ${timeout}
 
