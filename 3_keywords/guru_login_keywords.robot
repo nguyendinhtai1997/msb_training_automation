@@ -14,6 +14,6 @@ Login guru99 thành công
     Click Element    ${btn_login}
 
 Kiểm tra màn hình hiển thị chữ
-    [Arguments]    ${text}
-    Wait Until Element Is Visible    //h3[contains(text(), "${text}")]    10s 
+    [Arguments]    ${text}    ${timeout}
+    Wait Until Element Is Visible    //h3[contains(text(), "${text}")]    ${timeout} 
 

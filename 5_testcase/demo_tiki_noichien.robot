@@ -10,11 +10,11 @@ TC_timkiem
     [Tags]    timkiemnoichien
     Tai thanh search nhap tu khoa "nồi chiên"    nồi chiên
 
-    Click vào "nồi chiên không dầu" xuất hiện trong cụm gợi ý tìm kiếm sau khi thực hiện bước 2
+    Click vào "nồi chiên không dầu" xuất hiện trong cụm gợi ý tìm kiếm sau khi thực hiện bước 2    10s
 
-    Click vào sản phẩm nồi chiên thứ 4
+    Click vào sản phẩm nồi chiên thứ 4    10s
 
-    Click "Chọn mua"
+    Click "Chọn mua"    10s
 
     Verify popup có chứa "Xin chào"
 

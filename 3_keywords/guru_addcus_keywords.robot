@@ -8,16 +8,17 @@ Open web guru
     Maximize Browser Window
 
 Click button Add customer
-    Wait Until Element Is Visible    ${link_addCustomer}    15s
+    [Arguments]    ${timeout}
+    Wait Until Element Is Visible    ${link_addCustomer}    ${timeout}
     Click Link    ${link_addCustomer}
     Reload Page
     Click Link    ${link_addCustomer}
 
 Fill form Add customer
-    [Arguments]    ${fname}    ${lname}    ${email}    ${message}    ${telephoneno}
-    Wait Until Element Is Visible    ${label_done}    10s
+    [Arguments]    ${fname}    ${lname}    ${email}    ${message}    ${telephoneno}    ${timeout}
+    Wait Until Element Is Visible    ${label_done}    ${timeout}
     Click Element    ${label_done}
-    Wait Until Element Is Visible    ${inP_fname}    10s
+    Wait Until Element Is Visible    ${inP_fname}    ${timeout}
     Input Text    ${inP_fname}    ${fname}
     Input Text    ${inP_lname}    ${lname}
     Input Text    ${inP_email}    ${email}
@@ -33,7 +34,8 @@ Save Customer ID and back to Home page
     Click Link    ${link_home}
 
 Open Add Tariff Plan to Customer function
-    Wait Until Element Is Visible    ${link_addTariffPlan}    10s
+    [Arguments]    ${timeout}
+    Wait Until Element Is Visible    ${link_addTariffPlan}    ${timeout}
     Click Link    ${link_addTariffPlan}
 
 Enter the newly created Customer ID and click Submit

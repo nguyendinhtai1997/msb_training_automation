@@ -9,4 +9,4 @@ Test Teardown    Close Browser
     [Documentation]    Login and verify
     [Tags]    bai1_btvn_guru99
     Login guru99 thành công    vietphuonghihi@gmail.com    ABbc@1234
-    Kiểm tra màn hình hiển thị chữ    Successfully Logged in..
+    Kiểm tra màn hình hiển thị chữ    Successfully Logged in..    15s
