@@ -1,5 +1,5 @@
 *** Variables ***
-${a_Addcustomer}    //a[@href="addcustomer.php"]
+${a_Add_Customer}    //a[@href="addcustomer.php"]
 ${inp_BGC}    //section[@id='main']//label[@for='done']
 ${inp_fname}    //input[@id='fname']
 ${inp_lname}    //input[@id='lname']
@@ -8,8 +8,8 @@ ${inp_address}    //textarea[@id='message']
 ${inp_phone}    //input[@id='telephoneno']
 ${btn_submit}    //input[@name='submit']
 ${btn_home}    //a[@class='button']
-${a_ATBcustomer}    //a[@href="assigntariffplantocustomer.php"]
+${a_ATB_Customer}    //a[@href="assigntariffplantocustomer.php"]
 ${inp_customerid}    //input[@id='customer_id']
 ${btn_submit2}    //input[@name='submit']
-${verify_text1}    //h2[text()="Approved Tariff Plans"]
+${text_Approved}    //h2[text()="Approved Tariff Plans"]
 ${customer_id}    //table[@class='alt access']//h3
