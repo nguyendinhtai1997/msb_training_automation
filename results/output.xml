@@ -1,112 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20230907 09:13:53.273" rpa="false" schemaversion="4">
-<suite id="s1" name="Homework" source="C:\Users\hiennt60\Documents\auto\homework">
-<suite id="s1-s1" name="Bai3" source="C:\Users\hiennt60\Documents\auto\homework\bai3.robot">
-<test id="s1-s1-t1" name="[AU_01] - Tìm kiếm từ khóa MSB" line="6">
-<kw name="Truy cập trang google.com" library="google_keyword">
-<kw name="Truy cập vào Browser" library="Common_keyword">
-<arg>${url_google}</arg>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20230907 13:40:20.045" rpa="false" schemaversion="4">
+<suite id="s1" name="Msb Training Automation" source="C:\Users\hiennt60\Documents\GitHub\msb_training_automation">
+<suite id="s1-s1" name="Testcase" source="C:\Users\hiennt60\Documents\GitHub\msb_training_automation\Testcase">
+<suite id="s1-s1-s1" name="Guru Telecom" source="C:\Users\hiennt60\Documents\GitHub\msb_training_automation\Testcase\guru_telecom.robot">
+<test id="s1-s1-s1-t1" name="[AU_01] - Đăng nhập vào Guru 99" line="5">
+<kw name="Truy cập vào trang Guru 99">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>${url}</arg>
-<arg>${broswer}</arg>
+<arg>https://demo.guru99.com/telecom/index.html</arg>
+<arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230907 09:13:53.437" level="INFO">Opening browser 'chrome' to base url 'https://google.com'.</msg>
-<status status="PASS" starttime="20230907 09:13:53.436" endtime="20230907 09:13:57.231"/>
+<msg timestamp="20230907 13:40:20.216" level="INFO">Opening browser 'chrome' to base url 'https://demo.guru99.com/telecom/index.html'.</msg>
+<status status="PASS" starttime="20230907 13:40:20.215" endtime="20230907 13:41:23.644"/>
 </kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230907 09:13:57.231" endtime="20230907 09:13:57.347"/>
+<status status="PASS" starttime="20230907 13:40:20.215" endtime="20230907 13:41:23.645"/>
 </kw>
-<status status="PASS" starttime="20230907 09:13:53.436" endtime="20230907 09:13:57.347"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230907 09:13:57.347" endtime="20230907 09:13:57.348"/>
-</kw>
-<status status="PASS" starttime="20230907 09:13:53.436" endtime="20230907 09:13:57.349"/>
-</kw>
-<kw name="Nhập vào ô tìm kiếm &quot;MSB&quot;" library="google_keyword">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${inp_tìm kiếm}</arg>
-<arg>${name_suggest}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230907 09:13:57.350" level="INFO">Typing text 'MSB' into text field '//textarea[@name="q"]'.</msg>
-<status status="PASS" starttime="20230907 09:13:57.349" endtime="20230907 09:13:57.400"/>
-</kw>
-<status status="PASS" starttime="20230907 09:13:57.349" endtime="20230907 09:13:57.400"/>
-</kw>
-<kw name="Click vào gợi ý đầu tiên" library="google_keyword">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${div_suggest}</arg>
-<arg>${time_out}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230907 09:13:57.402" endtime="20230907 09:13:57.626"/>
-</kw>
+<kw name="Click Add Customer">
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>${div_suggest}</arg>
+<arg>//h3/a[text()="Add Customer"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230907 09:13:57.627" level="INFO">Clicking element '//div[@id="jZ2SBf"]'.</msg>
-<status status="PASS" starttime="20230907 09:13:57.626" endtime="20230907 09:13:57.774"/>
+<msg timestamp="20230907 13:41:23.648" level="INFO">Clicking element '//h3/a[text()="Add Customer"]'.</msg>
+<status status="PASS" starttime="20230907 13:41:23.647" endtime="20230907 13:41:23.698"/>
 </kw>
-<status status="PASS" starttime="20230907 09:13:57.401" endtime="20230907 09:13:57.774"/>
+<status status="PASS" starttime="20230907 13:41:23.646" endtime="20230907 13:41:23.698"/>
 </kw>
-<kw name="Click vào kết quả đầu tiên" library="google_keyword">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${div_product_1st}</arg>
-<arg>${time_out}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230907 09:13:57.777" endtime="20230907 09:13:59.366"/>
+<kw name="Load lại page">
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" starttime="20230907 13:41:23.700" endtime="20230907 13:41:37.036"/>
 </kw>
+<status status="PASS" starttime="20230907 13:41:23.699" endtime="20230907 13:41:37.036"/>
+</kw>
+<kw name="Click Done">
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>${div_product_1st}</arg>
+<arg>//label[contains(text(),'Done')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230907 09:13:59.367" level="INFO">Clicking element '//div[@id="rso"]/div[1]//a/*[text()="MSB"]'.</msg>
-<status status="PASS" starttime="20230907 09:13:59.367" endtime="20230907 09:14:02.940"/>
+<msg timestamp="20230907 13:41:37.037" level="INFO">Clicking element '//label[contains(text(),'Done')]'.</msg>
+<msg timestamp="20230907 13:41:37.147" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230907 13:41:37.148" level="FAIL">Element with locator '//label[contains(text(),'Done')]' not found.</msg>
+<status status="FAIL" starttime="20230907 13:41:37.037" endtime="20230907 13:41:37.151"/>
 </kw>
-<status status="PASS" starttime="20230907 09:13:57.776" endtime="20230907 09:14:02.940"/>
+<status status="FAIL" starttime="20230907 13:41:37.037" endtime="20230907 13:41:37.151"/>
 </kw>
-<kw name="Tắt popup" library="google_keyword">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${div_Tắt popup}</arg>
-<arg>${time_out}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230907 09:14:02.941" endtime="20230907 09:14:02.957"/>
+<kw name="Nhập FirstName">
+<status status="NOT RUN" starttime="20230907 13:41:37.151" endtime="20230907 13:41:37.152"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${div_Tắt popup}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230907 09:14:02.957" level="INFO">Clicking element '//div[@id="fragment-34202-joci"]/div/div/div/span'.</msg>
-<status status="PASS" starttime="20230907 09:14:02.957" endtime="20230907 09:14:02.990"/>
+<kw name="Nhập LastName">
+<status status="NOT RUN" starttime="20230907 13:41:37.152" endtime="20230907 13:41:37.152"/>
 </kw>
-<status status="PASS" starttime="20230907 09:14:02.941" endtime="20230907 09:14:02.990"/>
+<kw name="Nhập Email">
+<status status="NOT RUN" starttime="20230907 13:41:37.152" endtime="20230907 13:41:37.152"/>
 </kw>
-<kw name="Verify trang có chứa &quot;Chọn thẻ phù hợp với bạn&quot;" library="google_keyword">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${verify_Chọn thẻ phù hợp với bạn}</arg>
-<arg>${time_out}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230907 09:14:02.991" endtime="20230907 09:14:03.006"/>
+<kw name="Nhập Address">
+<status status="NOT RUN" starttime="20230907 13:41:37.152" endtime="20230907 13:41:37.152"/>
 </kw>
-<status status="PASS" starttime="20230907 09:14:02.990" endtime="20230907 09:14:03.007"/>
+<kw name="Nhập Mobile Number">
+<status status="NOT RUN" starttime="20230907 13:41:37.153" endtime="20230907 13:41:37.153"/>
 </kw>
-<doc>Tìm kiếm từ khóa MSB</doc>
-<tag>TC_01</tag>
-<status status="PASS" starttime="20230907 09:13:53.435" endtime="20230907 09:14:03.007"/>
+<kw name="Click Button Submit">
+<status status="NOT RUN" starttime="20230907 13:41:37.153" endtime="20230907 13:41:37.153"/>
+</kw>
+<kw name="Lưu Customer ID">
+<status status="NOT RUN" starttime="20230907 13:41:37.153" endtime="20230907 13:41:37.153"/>
+</kw>
+<kw name="Click Button Home">
+<status status="NOT RUN" starttime="20230907 13:41:37.153" endtime="20230907 13:41:37.153"/>
+</kw>
+<kw name="Click Add Tariff Plan to Customer">
+<status status="NOT RUN" starttime="20230907 13:41:37.153" endtime="20230907 13:41:37.154"/>
+</kw>
+<kw name="Nhập Customer ID">
+<status status="NOT RUN" starttime="20230907 13:41:37.154" endtime="20230907 13:41:37.154"/>
+</kw>
+<kw name="Click Button Submit 2">
+<status status="NOT RUN" starttime="20230907 13:41:37.154" endtime="20230907 13:41:37.154"/>
+</kw>
+<kw name="Verify &quot;Approved Tariff Plans&quot;">
+<status status="NOT RUN" starttime="20230907 13:41:37.154" endtime="20230907 13:41:37.154"/>
+</kw>
+<doc>Đăng nhập vào Guru 99</doc>
+<tag>TC_02</tag>
+<status status="FAIL" starttime="20230907 13:40:20.214" endtime="20230907 13:41:37.154">Element with locator '//label[contains(text(),'Done')]' not found.</status>
 </test>
-<status status="PASS" starttime="20230907 09:13:53.291" endtime="20230907 09:14:03.008"/>
+<status status="FAIL" starttime="20230907 13:40:20.069" endtime="20230907 13:41:37.156"/>
 </suite>
-<status status="PASS" starttime="20230907 09:13:53.276" endtime="20230907 09:14:03.010"/>
+<status status="FAIL" starttime="20230907 13:40:20.065" endtime="20230907 13:41:37.157"/>
+</suite>
+<status status="FAIL" starttime="20230907 13:40:20.048" endtime="20230907 13:41:37.159"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">TC_01</stat>
+<stat pass="0" fail="1" skip="0">TC_02</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Homework">Homework</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="Bai3">Homework.Bai3</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Msb Training Automation">Msb Training Automation</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Testcase">Msb Training Automation.Testcase</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Guru Telecom">Msb Training Automation.Testcase.Guru Telecom</stat>
 </suite>
 </statistics>
 <errors>
