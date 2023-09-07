@@ -12,7 +12,7 @@ Library     SeleniumLibrary
     Sleep    2s    # nếu cần chờ, dùng wait     - 0.1
     Click vào gợi ý đầu tiên
     Click vào kết quả đầu tiên
-    Sleep    5s    # nếu cần chờ, dùng wait     - 0.1
+    # Sleep    5s    # nếu cần chờ, dùng wait     - 0.1
     Tắt popup
     Verify trang có chứa "Chọn thẻ phù hợp với bạn"
 
