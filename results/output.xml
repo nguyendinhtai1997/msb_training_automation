@@ -1,58 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.10.0 on win32)" generated="20230907 17:01:50.084" rpa="false" schemaversion="4">
-<suite id="s1" name="Msb Training Automation" source="D:\Projects\msb_training_automation">
-<suite id="s1-s1" name="Testcase" source="D:\Projects\msb_training_automation\testcase">
-<suite id="s1-s1-s1" name="Btvn B2" source="D:\Projects\msb_training_automation\testcase\btvn_b2.robot">
-<test id="s1-s1-s1-t1" name="Guru - Them khach hang" line="6">
-<kw name="Truy cap guru" library="btvn_b2_keywords">
+<robot generator="Robot 6.1.1 (Python 3.9.0 on win32)" generated="20230907 21:22:04.793" rpa="false" schemaversion="4">
+<suite id="s1" name="Msb Training Automation" source="C:\Users\Hung.Le\Documents\GitHub\msb_training_automation">
+<suite id="s1-s1" name="Testcase" source="C:\Users\Hung.Le\Documents\GitHub\msb_training_automation\testcase">
+<suite id="s1-s1-s1" name="Guru Submit" source="C:\Users\Hung.Le\Documents\GitHub\msb_training_automation\testcase\guru_submit.robot">
+<test id="s1-s1-s1-t1" name="Guru - Them khach hang" line="7">
+<kw name="Truy cap guru" library="guru_submit_keywords">
 <arg>https://demo.guru99.com/telecom/index.html</arg>
 <arg>chrome</arg>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230907 17:01:50.448" level="INFO">Opening browser 'chrome' to base url 'https://demo.guru99.com/telecom/index.html'.</msg>
-<status status="PASS" starttime="20230907 17:01:50.447" endtime="20230907 17:02:15.365"/>
+<msg timestamp="20230907 21:22:05.058" level="INFO">Opening browser 'chrome' to base url 'https://demo.guru99.com/telecom/index.html'.</msg>
+<status status="PASS" starttime="20230907 21:22:05.057" endtime="20230907 21:22:10.173"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230907 17:02:15.365" endtime="20230907 17:02:15.529"/>
+<status status="PASS" starttime="20230907 21:22:10.174" endtime="20230907 21:22:10.307"/>
 </kw>
-<status status="PASS" starttime="20230907 17:01:50.447" endtime="20230907 17:02:15.529"/>
+<status status="PASS" starttime="20230907 21:22:05.057" endtime="20230907 21:22:10.307"/>
 </kw>
-<kw name="Chon Add Customer" library="btvn_b2_keywords">
+<kw name="Chon Add Customer" library="guru_submit_keywords">
 <arg>//h3/a[text()='Add Customer']</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${add_cus}</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230907 17:02:15.531" endtime="20230907 17:02:15.563"/>
+<status status="PASS" starttime="20230907 21:22:10.308" endtime="20230907 21:22:10.336"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${add_cus}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230907 17:02:15.565" level="INFO">Clicking element '//h3/a[text()='Add Customer']'.</msg>
-<status status="PASS" starttime="20230907 17:02:15.564" endtime="20230907 17:02:15.654"/>
+<msg timestamp="20230907 21:22:10.338" level="INFO">Clicking element '//h3/a[text()='Add Customer']'.</msg>
+<status status="PASS" starttime="20230907 21:22:10.337" endtime="20230907 21:22:10.404"/>
 </kw>
 <kw name="Reload Page" library="SeleniumLibrary">
 <doc>Simulates user reloading page.</doc>
-<status status="PASS" starttime="20230907 17:02:15.654" endtime="20230907 17:02:16.160"/>
+<status status="PASS" starttime="20230907 21:22:10.405" endtime="20230907 21:22:10.909"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${add_cus}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230907 17:02:16.161" endtime="20230907 17:02:16.179"/>
+<status status="PASS" starttime="20230907 21:22:10.909" endtime="20230907 21:22:10.935"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${add_cus}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230907 17:02:16.180" level="INFO">Clicking element '//h3/a[text()='Add Customer']'.</msg>
-<status status="PASS" starttime="20230907 17:02:16.179" endtime="20230907 17:02:16.665"/>
+<msg timestamp="20230907 21:22:10.936" level="INFO">Clicking element '//h3/a[text()='Add Customer']'.</msg>
+<status status="PASS" starttime="20230907 21:22:10.935" endtime="20230907 21:22:11.372"/>
 </kw>
-<status status="PASS" starttime="20230907 17:02:15.530" endtime="20230907 17:02:16.665"/>
+<status status="PASS" starttime="20230907 21:22:10.308" endtime="20230907 21:22:11.373"/>
 </kw>
-<kw name="Nhap thong tin khach hang" library="btvn_b2_keywords">
+<kw name="Nhap thong tin khach hang" library="guru_submit_keywords">
 <arg>Nguyen</arg>
 <arg>Thuy</arg>
 <arg>thuynt@gmail.com</arg>
@@ -61,137 +61,137 @@
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${checkdone}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230907 17:02:16.668" level="INFO">Clicking element '//label[text()='Done']'.</msg>
-<status status="PASS" starttime="20230907 17:02:16.667" endtime="20230907 17:02:16.714"/>
+<msg timestamp="20230907 21:22:11.374" level="INFO">Clicking element '//label[text()='Done']'.</msg>
+<status status="PASS" starttime="20230907 21:22:11.374" endtime="20230907 21:22:11.429"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${firstname}</arg>
 <arg>${fname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230907 17:02:16.715" level="INFO">Typing text 'Nguyen' into text field '//input[@id='fname']'.</msg>
-<status status="PASS" starttime="20230907 17:02:16.714" endtime="20230907 17:02:16.800"/>
+<msg timestamp="20230907 21:22:11.430" level="INFO">Typing text 'Nguyen' into text field '//input[@id='fname']'.</msg>
+<status status="PASS" starttime="20230907 21:22:11.429" endtime="20230907 21:22:11.567"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${lastname}</arg>
 <arg>${lname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230907 17:02:16.801" level="INFO">Typing text 'Thuy' into text field '//input[@id='lname']'.</msg>
-<status status="PASS" starttime="20230907 17:02:16.800" endtime="20230907 17:02:16.877"/>
+<msg timestamp="20230907 21:22:11.568" level="INFO">Typing text 'Thuy' into text field '//input[@id='lname']'.</msg>
+<status status="PASS" starttime="20230907 21:22:11.567" endtime="20230907 21:22:11.704"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${mail}</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230907 17:02:16.877" level="INFO">Typing text 'thuynt@gmail.com' into text field '//input[@id='email']'.</msg>
-<status status="PASS" starttime="20230907 17:02:16.877" endtime="20230907 17:02:16.961"/>
+<msg timestamp="20230907 21:22:11.705" level="INFO">Typing text 'thuynt@gmail.com' into text field '//input[@id='email']'.</msg>
+<status status="PASS" starttime="20230907 21:22:11.704" endtime="20230907 21:22:11.797"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${addr}</arg>
 <arg>${address}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230907 17:02:16.961" level="INFO">Typing text 'Ha Noi' into text field '//textarea[@id='message']'.</msg>
-<status status="PASS" starttime="20230907 17:02:16.961" endtime="20230907 17:02:17.030"/>
+<msg timestamp="20230907 21:22:11.798" level="INFO">Typing text 'Ha Noi' into text field '//textarea[@id='message']'.</msg>
+<status status="PASS" starttime="20230907 21:22:11.797" endtime="20230907 21:22:11.867"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${phone}</arg>
 <arg>${mphone}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230907 17:02:17.031" level="INFO">Typing text '0987655555' into text field '//input[@id='telephoneno']'.</msg>
-<status status="PASS" starttime="20230907 17:02:17.030" endtime="20230907 17:02:17.099"/>
+<msg timestamp="20230907 21:22:11.869" level="INFO">Typing text '0987655555' into text field '//input[@id='telephoneno']'.</msg>
+<status status="PASS" starttime="20230907 21:22:11.868" endtime="20230907 21:22:11.955"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${submit}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230907 17:02:17.100" level="INFO">Clicking button '//input[@name='submit']'.</msg>
-<status status="PASS" starttime="20230907 17:02:17.100" endtime="20230907 17:02:18.109"/>
+<msg timestamp="20230907 21:22:11.956" level="INFO">Clicking button '//input[@name='submit']'.</msg>
+<status status="PASS" starttime="20230907 21:22:11.955" endtime="20230907 21:22:12.768"/>
 </kw>
-<status status="PASS" starttime="20230907 17:02:16.666" endtime="20230907 17:02:18.109"/>
+<status status="PASS" starttime="20230907 21:22:11.373" endtime="20230907 21:22:12.768"/>
 </kw>
-<kw name="Lay Customer ID" library="btvn_b2_keywords">
+<kw name="Lay Customer ID" library="guru_submit_keywords">
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${customer_id}</var>
 <arg>//td[@align = 'center']/h3</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230907 17:02:18.133" level="INFO">${customer_id} = 436636</msg>
-<status status="PASS" starttime="20230907 17:02:18.110" endtime="20230907 17:02:18.134"/>
+<msg timestamp="20230907 21:22:12.796" level="INFO">${customer_id} = 862776</msg>
+<status status="PASS" starttime="20230907 21:22:12.771" endtime="20230907 21:22:12.797"/>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <arg>${cus_id}</arg>
 <arg>${customer_id}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<msg timestamp="20230907 17:02:18.137" level="INFO">${cus_id} = 436636</msg>
-<status status="PASS" starttime="20230907 17:02:18.134" endtime="20230907 17:02:18.140"/>
+<msg timestamp="20230907 21:22:12.799" level="INFO">${cus_id} = 862776</msg>
+<status status="PASS" starttime="20230907 21:22:12.797" endtime="20230907 21:22:12.799"/>
 </kw>
-<status status="PASS" starttime="20230907 17:02:18.110" endtime="20230907 17:02:18.140"/>
+<status status="PASS" starttime="20230907 21:22:12.770" endtime="20230907 21:22:12.800"/>
 </kw>
-<kw name="Click Home" library="btvn_b2_keywords">
+<kw name="Click Home" library="guru_submit_keywords">
 <arg>//ul[@class='actions']//a[text()='Home']</arg>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${btn_home}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230907 17:02:18.143" level="INFO">Clicking element '//ul[@class='actions']//a[text()='Home']'.</msg>
-<status status="PASS" starttime="20230907 17:02:18.142" endtime="20230907 17:02:19.482"/>
+<msg timestamp="20230907 21:22:12.802" level="INFO">Clicking element '//ul[@class='actions']//a[text()='Home']'.</msg>
+<status status="PASS" starttime="20230907 21:22:12.801" endtime="20230907 21:22:13.312"/>
 </kw>
-<status status="PASS" starttime="20230907 17:02:18.141" endtime="20230907 17:02:19.482"/>
+<status status="PASS" starttime="20230907 21:22:12.800" endtime="20230907 21:22:13.312"/>
 </kw>
-<kw name="Click Add Tariff Plan to Customer" library="btvn_b2_keywords">
+<kw name="Click Add Tariff Plan to Customer" library="guru_submit_keywords">
 <arg>//h3/a[text()='Add Tariff Plan to Customer']</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${tariff}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230907 17:02:19.485" endtime="20230907 17:02:19.529"/>
+<status status="PASS" starttime="20230907 21:22:13.314" endtime="20230907 21:22:13.342"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${tariff}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230907 17:02:19.530" level="INFO">Clicking element '//h3/a[text()='Add Tariff Plan to Customer']'.</msg>
-<status status="PASS" starttime="20230907 17:02:19.529" endtime="20230907 17:02:21.568"/>
+<msg timestamp="20230907 21:22:13.343" level="INFO">Clicking element '//h3/a[text()='Add Tariff Plan to Customer']'.</msg>
+<status status="PASS" starttime="20230907 21:22:13.342" endtime="20230907 21:22:13.891"/>
 </kw>
-<status status="PASS" starttime="20230907 17:02:19.484" endtime="20230907 17:02:21.569"/>
+<status status="PASS" starttime="20230907 21:22:13.313" endtime="20230907 21:22:13.891"/>
 </kw>
-<kw name="Nhap Customer ID vua tao" library="btvn_b2_keywords">
+<kw name="Nhap Customer ID vua tao" library="guru_submit_keywords">
 <arg>//input[@id='customer_id']</arg>
 <arg>${cus_id}</arg>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${id_input}</arg>
 <arg>${cus_id}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230907 17:02:21.570" level="INFO">Typing text '436636' into text field '//input[@id='customer_id']'.</msg>
-<status status="PASS" starttime="20230907 17:02:21.570" endtime="20230907 17:02:21.635"/>
+<msg timestamp="20230907 21:22:13.894" level="INFO">Typing text '862776' into text field '//input[@id='customer_id']'.</msg>
+<status status="PASS" starttime="20230907 21:22:13.894" endtime="20230907 21:22:14.069"/>
 </kw>
-<status status="PASS" starttime="20230907 17:02:21.569" endtime="20230907 17:02:21.635"/>
+<status status="PASS" starttime="20230907 21:22:13.893" endtime="20230907 21:22:14.069"/>
 </kw>
-<kw name="Click Submit" library="btvn_b2_keywords">
+<kw name="Click Submit" library="guru_submit_keywords">
 <arg>//input[@name='submit']</arg>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${btn_submit}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230907 17:02:21.637" level="INFO">Clicking button '//input[@name='submit']'.</msg>
-<status status="PASS" starttime="20230907 17:02:21.636" endtime="20230907 17:02:22.422"/>
+<msg timestamp="20230907 21:22:14.071" level="INFO">Clicking button '//input[@name='submit']'.</msg>
+<status status="PASS" starttime="20230907 21:22:14.071" endtime="20230907 21:22:14.741"/>
 </kw>
-<status status="PASS" starttime="20230907 17:02:21.636" endtime="20230907 17:02:22.423"/>
+<status status="PASS" starttime="20230907 21:22:14.070" endtime="20230907 21:22:14.742"/>
 </kw>
-<kw name="Kiem tra text hien thi &quot;Approved Tariff Plans&quot;" library="btvn_b2_keywords">
+<kw name="Kiem tra text hien thi &quot;Approved Tariff Plans&quot;" library="guru_submit_keywords">
 <arg>Approved Tariff Plans</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//section[@id='main']//h2[text()='${text_approved}']</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230907 17:02:22.425" endtime="20230907 17:02:22.455"/>
+<status status="PASS" starttime="20230907 21:22:14.744" endtime="20230907 21:22:14.772"/>
 </kw>
-<status status="PASS" starttime="20230907 17:02:22.424" endtime="20230907 17:02:22.455"/>
+<status status="PASS" starttime="20230907 21:22:14.743" endtime="20230907 21:22:14.772"/>
 </kw>
 <doc>Them khach hang</doc>
 <tag>guru</tag>
 <tag>tc111</tag>
-<status status="PASS" starttime="20230907 17:01:50.445" endtime="20230907 17:02:22.457"/>
+<status status="PASS" starttime="20230907 21:22:05.055" endtime="20230907 21:22:14.773"/>
 </test>
-<status status="PASS" starttime="20230907 17:01:50.123" endtime="20230907 17:02:22.460"/>
+<status status="PASS" starttime="20230907 21:22:04.828" endtime="20230907 21:22:14.775"/>
 </suite>
-<status status="PASS" starttime="20230907 17:01:50.119" endtime="20230907 17:02:22.463"/>
+<status status="PASS" starttime="20230907 21:22:04.824" endtime="20230907 21:22:14.778"/>
 </suite>
-<status status="PASS" starttime="20230907 17:01:50.091" endtime="20230907 17:02:22.466"/>
+<status status="PASS" starttime="20230907 21:22:04.798" endtime="20230907 21:22:14.782"/>
 </suite>
 <statistics>
 <total>
@@ -204,9 +204,11 @@
 <suite>
 <stat pass="1" fail="0" skip="0" id="s1" name="Msb Training Automation">Msb Training Automation</stat>
 <stat pass="1" fail="0" skip="0" id="s1-s1" name="Testcase">Msb Training Automation.Testcase</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Btvn B2">Msb Training Automation.Testcase.Btvn B2</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Guru Submit">Msb Training Automation.Testcase.Guru Submit</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20230907 21:22:05.039" level="ERROR">Error in file 'C:\Users\Hung.Le\Documents\GitHub\msb_training_automation\imports.robot' on line 6: Error in file 'C:\Users\Hung.Le\Documents\GitHub\msb_training_automation\testcase\google.robot' on line 4: Resource file with 'Test Cases' section is invalid.</msg>
+<msg timestamp="20230907 21:22:05.042" level="ERROR">Error in file 'C:\Users\Hung.Le\Documents\GitHub\msb_training_automation\imports.robot' on line 7: Error in file 'C:\Users\Hung.Le\Documents\GitHub\msb_training_automation\testcase\tiki.robot' on line 4: Resource file with 'Test Cases' section is invalid.</msg>
 </errors>
 </robot>

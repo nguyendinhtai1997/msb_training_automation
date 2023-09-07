@@ -1,5 +1,6 @@
 *** Settings ***
 Resource    ../imports.robot
+Resource    ..//keywords/guru_submit_keywords.robot
 
 
 *** Test Cases ***
