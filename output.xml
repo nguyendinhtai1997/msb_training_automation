@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.0 on win32)" generated="20230907 16:02:00.248" rpa="false" schemaversion="4">
+<suite id="s1" name="Msb Training Automation" source="D:\Projects\msb_training_automation">
+<suite id="s1-s1" name="Testcase" source="D:\Projects\msb_training_automation\testcase">
+<suite id="s1-s1-s1" name="Btvn B2" source="D:\Projects\msb_training_automation\testcase\btvn_b2.robot">
+<test id="s1-s1-s1-t1" name="Guru - Test Them khach hang" line="6">
+<kw name="Truy cap guru" library="btvn_b2_keywords">
+<arg>https://demo.guru99.com/telecom/index.html</arg>
+<arg>chrome</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230907 16:02:00.471" level="INFO">Opening browser 'chrome' to base url 'https://demo.guru99.com/telecom/index.html'.</msg>
+<msg timestamp="20230907 16:02:24.776" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002109CD898A0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/d4fed85641f94df9c8713eb5ef565b77/screenshot</msg>
+<msg timestamp="20230907 16:02:28.850" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002109CD89930&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/d4fed85641f94df9c8713eb5ef565b77/screenshot</msg>
+<msg timestamp="20230907 16:02:32.927" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002109CD89AB0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/d4fed85641f94df9c8713eb5ef565b77/screenshot</msg>
+<msg timestamp="20230907 16:02:37.018" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: HTTPConnectionPool(host='localhost', port=62416): Max retries exceeded with url: /session/d4fed85641f94df9c8713eb5ef565b77/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002109CD89C00&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))</msg>
+<status status="FAIL" starttime="20230907 16:02:00.470" endtime="20230907 16:02:37.023"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230907 16:02:37.023" endtime="20230907 16:02:37.023"/>
+</kw>
+<status status="FAIL" starttime="20230907 16:02:00.470" endtime="20230907 16:02:37.023"/>
+</kw>
+<kw name="Chon Add Customer" library="btvn_b2_keywords">
+<arg>//h3/a[text()='Add Customer']</arg>
+<status status="NOT RUN" starttime="20230907 16:02:37.024" endtime="20230907 16:02:37.024"/>
+</kw>
+<kw name="Nhap thong tin khach hang" library="btvn_b2_keywords">
+<arg>Nguyen</arg>
+<arg>Thuy</arg>
+<arg>thuynt@gmail.com</arg>
+<arg>Ha Noi</arg>
+<arg>0987655555</arg>
+<status status="NOT RUN" starttime="20230907 16:02:37.025" endtime="20230907 16:02:37.025"/>
+</kw>
+<doc>Test them khach hang</doc>
+<tag>guru</tag>
+<status status="FAIL" starttime="20230907 16:02:00.469" endtime="20230907 16:02:37.026">Execution terminated by signal</status>
+</test>
+<status status="FAIL" starttime="20230907 16:02:00.276" endtime="20230907 16:02:37.031"/>
+</suite>
+<status status="FAIL" starttime="20230907 16:02:00.270" endtime="20230907 16:02:37.035"/>
+</suite>
+<status status="FAIL" starttime="20230907 16:02:00.250" endtime="20230907 16:02:37.037"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">guru</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Msb Training Automation">Msb Training Automation</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Testcase">Msb Training Automation.Testcase</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Btvn B2">Msb Training Automation.Testcase.Btvn B2</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230907 16:02:24.776" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002109CD898A0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/d4fed85641f94df9c8713eb5ef565b77/screenshot</msg>
+<msg timestamp="20230907 16:02:28.850" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002109CD89930&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/d4fed85641f94df9c8713eb5ef565b77/screenshot</msg>
+<msg timestamp="20230907 16:02:32.927" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002109CD89AB0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/d4fed85641f94df9c8713eb5ef565b77/screenshot</msg>
+<msg timestamp="20230907 16:02:37.018" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: HTTPConnectionPool(host='localhost', port=62416): Max retries exceeded with url: /session/d4fed85641f94df9c8713eb5ef565b77/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002109CD89C00&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))</msg>
+</errors>
+</robot>
