@@ -8,4 +8,4 @@ Test Teardown    Close Browser
 [TCs_01] - Mua sản phẩm Nồi chiên không dầu
     [Documentation]    Mua sản phẩm Nồi chiên không dầu 
     [Tags]    demo_tiki.vn
-    Mua sản phẩm nồi chiên không dầu    nồi chiên    20s
+    Mua sản phẩm nồi chiên không dầu    nồi chiên    30s

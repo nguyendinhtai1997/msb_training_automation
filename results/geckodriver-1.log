@@ -1,33 +1,43 @@
-1693996437185	geckodriver	INFO	Listening on 127.0.0.1:56720
-1693996440230	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56721" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\hanglt26\\AppData\\Local\\Temp\\rust_mozprofilep7I3kF"
+1694068992940	geckodriver	INFO	Listening on 127.0.0.1:61108
+1694068995981	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61109" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\hanglt26\\AppData\\Local\\Temp\\rust_mozprofileMs6WtD"
 console.warn: services.settings: Ignoring preference override of remote settings server
 console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
 [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
-1693996440611	Marionette	INFO	Marionette enabled
+1694068996332	Marionette	INFO	Marionette enabled
 Dynamically enable window occlusion 0
-1693996440668	Marionette	INFO	Listening on port 56736
-WebDriver BiDi listening on ws://127.0.0.1:56721
-Read port: 56736
-1693996440968	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1694068996392	Marionette	INFO	Listening on port 61159
+WebDriver BiDi listening on ws://127.0.0.1:61109
+Read port: 61159
+1694068996580	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
 [GFX1-]: Failed to get D3D11VideoDevice: 0x80004002
 [GFX1-]: Handling webrender error 5
-DevTools listening on ws://127.0.0.1:56721/devtools/browser/7c2ed108-942a-4787-b741-42a5513043cc
-JavaScript warning: https://frontend.tikicdn.com/_desktop-next/_next/static/chunks/155fa113ab27084200dcf95a4ce7d83f61bacb2a.da9cc8215e3c2b604bae.js, line 1: unreachable code after return statement
-JavaScript warning: https://frontend.tikicdn.com/_desktop-next/_next/static/chunks/155fa113ab27084200dcf95a4ce7d83f61bacb2a.da9cc8215e3c2b604bae.js, line 1: unreachable code after return statement
-JavaScript warning: https://frontend.tikicdn.com/_desktop-next/_next/static/chunks/155fa113ab27084200dcf95a4ce7d83f61bacb2a.da9cc8215e3c2b604bae.js, line 1: unreachable code after return statement
-[Parent 41768, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
-[GPU 3620, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
-1693996452456	Marionette	INFO	Stopped listening on port 56736
-JavaScript warning: https://frontend.tikicdn.com/_desktop-next/_next/static/chunks/lib.worker-pouch.06cc653e6a950ead3b42.js, line 1: Script terminated by timeout at:
-v@https://frontend.tikicdn.com/_desktop-next/_next/static/chunks/lib.worker-pouch.06cc653e6a950ead3b42.js:1:14513
+DevTools listening on ws://127.0.0.1:61109/devtools/browser/c3f1fb14-a567-4d6d-b816-8c4955dfdb35
+[Parent 19144, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 16752, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+JavaScript error: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmsb%26sca_esv%3D563320360%26source%3Dhp%26ei%3DCXH5ZJPvKImohwPnoY6YAg%26iflsig%3DAD69kcEAAAAAZPl_GWyemX_QbRkbBnn1RAgRgoZm6LqW%26oq%3DMSB%26gs_lp%3DEgdnd3Mtd2l6IgNNU0IqAggAMgsQABiABBixAxiDATILEAAYgAQYsQMYgwEyCBAAGIAEGLEDMgUQABiABDILEAAYgAQYsQMYgwEyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEjyAVAAWAhwAHgAkAEBmAFeoAGDAqoBATO4AQHIAQD4AQHCAggQLhiABBixA8ICCxAuGIoFGLEDGIMBwgILEC4YgAQYsQMYgwE%26sclient%3Dgws-wiz&q=EgRoHP5JGI7i5acGIjAdHdXTKV8tD31p0gIkIUvWGQfQ9YNpo4qZ9GIK_VJCRltxNxG4Jnb6qEW4BQ19ZswyAXJaAUM, line 1: SyntaxError: expected expression, got ','
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.sys.mjs", 597))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+1694069034300	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[Parent 19144, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 16752, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 19144, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 16752, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1694069050325	Marionette	INFO	Stopped listening on port 61159
+JavaScript warning: https://www.msb.com.vn/combo/?browserId=firefox&minifierType=&languageId=vi_VN&b=7310&t=1665575097136&/o/frontend-js-aui-web/aui/aui-timer/aui-timer-min.js&/o/frontend-js-aui-web/aui/event-touch/event-touch-min.js&/o/frontend-js-aui-web/aui/event-move/event-move-min.js, line 1: Script terminated by timeout at:
+_runner@https://www.msb.com.vn/combo/?browserId=firefox&minifierType=&languageId=vi_VN&b=7310&t=1665575097136&/o/frontend-js-aui-web/aui/aui-timer/aui-timer-min.js&/o/frontend-js-aui-web/aui/event-touch/event-touch-min.js&/o/frontend-js-aui-web/aui/event-move/event-move-min.js:1:1695
 
 Dynamically enable window occlusion 1
-[Parent 41768, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
-[GPU 3620, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
-[Parent 41768, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
-[GPU 3620, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
-[Parent 41768, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
-[GPU 3620, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
-[Parent 41768, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
-[GPU 3620, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 19144, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 16752, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 19144, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 16752, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 19144, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 16752, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 19144, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 16752, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 19144, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 16752, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443

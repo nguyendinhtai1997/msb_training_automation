@@ -8,4 +8,4 @@ Test Teardown    Close Browser
 [TCs_01] - Tìm kiếm thông tin MSB
     [Documentation]    Tìm kiếm thông tin MSB
     [Tags]    demo_google.com
-    Tìm kiếm thông tin MSB    MSB    20s
+    Tìm kiếm thông tin MSB    MSB    30s
