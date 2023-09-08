@@ -15,3 +15,16 @@ Tìm kiếm từ khóa
 
 Button Tìm Kiếm
     Click Button    //div[@id="fragment-34202-joci"]/div/div/div/span
+
+Click vào kết quả tìm kiếm số mot
+    [Arguments]    ${locator}    ${text}
+    Click Element   ${locator}    ${text}
+
+Tắt Popup
+    [Arguments]    ${locator}    ${text}
+    Click Element    ${locator}    ${text}
+
+Verify trang có chứa Chọn thẻ phù hợp với bạn
+    [Arguments]    ${locator}
+    Element Should Be Visible    ${locator}
+    
