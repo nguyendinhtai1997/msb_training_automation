@@ -4,6 +4,7 @@ Library     SeleniumLibrary    # thầy tự import
 # chưa import thư viện SeleniumLibrary -0.5
 # đặt tags, documentation cho test case -0.5
 
+
 *** Test Cases ***
 Bai 1
     # open browser https://demo.guru99.com/test/login.html chrome    # lưu ý, 4 space = 1 tab, nên dùng tab, ít nhất 2 space    -0.2
