@@ -1,6 +1,5 @@
 *** Settings ***
-Library    SeleniumLibrary
-Resource    ../2_elements/timkiemweb_msb.robot
+Resource    ${EXECDIR}/import_btvn2.robot
 
 *** Keywords ***
 Click vào ô tìm kiềm và nhập từ khóa "MSB"

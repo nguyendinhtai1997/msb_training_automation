@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../import.robot
+Resource    ${EXECDIR}/import_btvn2.robot
 
 *** Keywords ***
 Open web guru
