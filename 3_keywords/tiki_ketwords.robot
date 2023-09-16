@@ -21,7 +21,7 @@ Select item from search result
     Click Element    ${product_item_4}
 
 Click buy button
-    Wait Until Element Is Visible    ${btn_buy}
+    Wait Until Element Is Visible    ${btn_buy} 
     Click Element    ${btn_buy}
 
 Verify popup display text

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on darwin)" generated="20230916 10:58:07.770" rpa="false" schemaversion="4">
+<suite id="s1" name="Final Exam" source="/Users/thu.nguyen/Project/Final_Exam">
+<suite id="s1-s1" name="3 Test Cases" source="/Users/thu.nguyen/Project/Final_Exam/3_test_cases">
+<suite id="s1-s1-s1" name="Bai 2" source="/Users/thu.nguyen/Project/Final_Exam/3_test_cases/Bai_2.robot">
+<test id="s1-s1-s1-t1" name="[TODOIST_TC_02] - Add new task" line="6">
+<kw name="Access to Todoist login page" library="todoist_login_page_kws">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://todoist.com/auth/login</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230916 10:58:07.848" level="INFO">Opening browser 'chrome' to base url 'https://todoist.com/auth/login'.</msg>
+<status status="PASS" starttime="20230916 10:58:07.848" endtime="20230916 10:58:11.057"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230916 10:58:11.058" endtime="20230916 10:58:11.544"/>
+</kw>
+<status status="PASS" starttime="20230916 10:58:07.848" endtime="20230916 10:58:11.545"/>
+</kw>
+<kw name="Input email and password" library="todoist_login_page_kws">
+<arg>daonhanktdn@gmail.com</arg>
+<arg>12345678Aa</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${tf_email}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230916 10:58:11.545" endtime="20230916 10:58:12.409"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${tf_email}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230916 10:58:12.410" level="INFO">Typing text 'daonhanktdn@gmail.com' into text field '//input[@id='element-0']'.</msg>
+<status status="PASS" starttime="20230916 10:58:12.409" endtime="20230916 10:58:12.529"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${tf_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230916 10:58:12.530" level="INFO">Typing text '12345678Aa' into text field '//input[@id='element-3']'.</msg>
+<status status="PASS" starttime="20230916 10:58:12.530" endtime="20230916 10:58:12.579"/>
+</kw>
+<status status="PASS" starttime="20230916 10:58:11.545" endtime="20230916 10:58:12.579"/>
+</kw>
+<kw name="Click Login button" library="todoist_login_page_kws">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230916 10:58:12.580" level="INFO">Clicking element '//button[@data-gtm-id='start-email-login']'.</msg>
+<status status="PASS" starttime="20230916 10:58:12.580" endtime="20230916 10:58:12.610"/>
+</kw>
+<status status="PASS" starttime="20230916 10:58:12.580" endtime="20230916 10:58:12.611"/>
+</kw>
+<kw name="Open Left menu on Home page" library="todoist_home_page_kws">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${btn_open_menu}</arg>
+<arg>15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230916 10:58:12.611" endtime="20230916 10:58:16.794"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_open_menu}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230916 10:58:16.794" level="INFO">Clicking element '//button[@data-gtm-id='burger-menu-toggle']'.</msg>
+<status status="PASS" starttime="20230916 10:58:16.794" endtime="20230916 10:58:17.497"/>
+</kw>
+<status status="PASS" starttime="20230916 10:58:12.611" endtime="20230916 10:58:17.497"/>
+</kw>
+<kw name="Select added project" library="todoist_home_page_kws">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_msb_training_prj}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230916 10:58:17.498" level="INFO">Clicking element '//div[@id='left-menu-projects-panel']//div[text()='Automation_MSB_Project']'.</msg>
+<status status="PASS" starttime="20230916 10:58:17.497" endtime="20230916 10:58:17.571"/>
+</kw>
+<status status="PASS" starttime="20230916 10:58:17.497" endtime="20230916 10:58:17.571"/>
+</kw>
+<kw name="Select add new task button" library="todoist_home_page_kws">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_add_task}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230916 10:58:17.571" level="INFO">Clicking element '//button[@class='plus_add_button']'.</msg>
+<status status="PASS" starttime="20230916 10:58:17.571" endtime="20230916 10:58:17.652"/>
+</kw>
+<status status="PASS" starttime="20230916 10:58:17.571" endtime="20230916 10:58:17.652"/>
+</kw>
+<kw name="Input task information" library="todoist_home_page_kws">
+<arg>Automation_MSB_Task</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${lb_add_task_name}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230916 10:58:17.652" endtime="20230916 10:58:17.668"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${lb_add_task_name}</arg>
+<arg>${input_task_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230916 10:58:17.669" level="INFO">Typing text 'Automation_MSB_Task' into text field '//div[@role='textbox']'.</msg>
+<status status="PASS" starttime="20230916 10:58:17.669" endtime="20230916 10:58:17.823"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${task_name}</arg>
+<arg>${input_task_name}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20230916 10:58:17.824" level="INFO">${task_name} = Automation_MSB_Task</msg>
+<status status="PASS" starttime="20230916 10:58:17.823" endtime="20230916 10:58:17.824"/>
+</kw>
+<status status="PASS" starttime="20230916 10:58:17.652" endtime="20230916 10:58:17.824"/>
+</kw>
+<kw name="Click submit add new task button" library="todoist_home_page_kws">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230916 10:58:19.826" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230916 10:58:17.824" endtime="20230916 10:58:19.827"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_submit_add_task}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230916 10:58:19.829" level="INFO">Clicking element '//button[@data-testid='task-editor-submit-button']'.</msg>
+<status status="PASS" starttime="20230916 10:58:19.827" endtime="20230916 10:58:19.908"/>
+</kw>
+<status status="PASS" starttime="20230916 10:58:17.824" endtime="20230916 10:58:19.909"/>
+</kw>
+<kw name="Verify add task successfully with correct inputed information" library="todoist_home_page_kws">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${list_task}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230916 10:58:19.909" endtime="20230916 10:58:19.919"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${value}</var>
+<arg>${list_task}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230916 10:58:19.929" level="INFO">${value} = Automation_MSB_Task</msg>
+<status status="PASS" starttime="20230916 10:58:19.919" endtime="20230916 10:58:19.929"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${task_name}</arg>
+<arg>${value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20230916 10:58:19.930" endtime="20230916 10:58:19.930"/>
+</kw>
+<status status="PASS" starttime="20230916 10:58:19.909" endtime="20230916 10:58:19.930"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230916 10:58:24.931" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230916 10:58:19.930" endtime="20230916 10:58:24.931"/>
+</kw>
+<doc>Add new task on Todoist</doc>
+<tag>add_task</tag>
+<status status="PASS" starttime="20230916 10:58:07.847" endtime="20230916 10:58:24.932"/>
+</test>
+<status status="PASS" starttime="20230916 10:58:07.781" endtime="20230916 10:58:24.934"/>
+</suite>
+<status status="PASS" starttime="20230916 10:58:07.780" endtime="20230916 10:58:24.936"/>
+</suite>
+<status status="PASS" starttime="20230916 10:58:07.771" endtime="20230916 10:58:24.937"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">add_task</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Final Exam">Final Exam</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="3 Test Cases">Final Exam.3 Test Cases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Bai 2">Final Exam.3 Test Cases.Bai 2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
