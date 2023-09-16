@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20230916 11:03:47.718" rpa="false" schemaversion="4">
+<suite id="s1" name="Final Exam" source="C:\Users\ADMIN\Desktop\Final_Exam">
+<suite id="s1-s1" name="5 Testcases" source="C:\Users\ADMIN\Desktop\Final_Exam\5_testcases">
+<suite id="s1-s1-s1" name="Bai1" source="C:\Users\ADMIN\Desktop\Final_Exam\5_testcases\Bai1.robot">
+<test id="s1-s1-s1-t1" name="[TCS_B1] Create project for Todoist page" line="6">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://todoist.com/auth/login</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230916 11:03:47.987" level="INFO">Opening browser 'chrome' to base url 'https://todoist.com/auth/login'.</msg>
+<status status="PASS" starttime="20230916 11:03:47.986" endtime="20230916 11:03:52.076"/>
+</kw>
+<kw name="Login successfull user" library="Final_exam_keyword">
+<arg>nganht13@msb.com.vn</arg>
+<arg>Hameunjung121297@</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//input[@placeholder='Enter your email...']</arg>
+<arg>3s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230916 11:03:52.078" endtime="20230916 11:03:53.210"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${mail}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230916 11:03:53.211" level="INFO">Typing text 'nganht13@msb.com.vn' into text field '//input[@placeholder='Enter your email...']'.</msg>
+<status status="PASS" starttime="20230916 11:03:53.211" endtime="20230916 11:03:53.440"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${pass}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230916 11:03:53.441" level="INFO">Typing text 'Hameunjung121297@' into text field '//input[@placeholder='Enter your password...']'.</msg>
+<status status="PASS" starttime="20230916 11:03:53.440" endtime="20230916 11:03:53.552"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230916 11:03:53.553" level="INFO">Clicking element '//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20230916 11:03:53.553" endtime="20230916 11:03:53.602"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Project_text}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230916 11:03:53.602" endtime="20230916 11:04:01.125"/>
+</kw>
+<status status="PASS" starttime="20230916 11:03:52.077" endtime="20230916 11:04:01.125"/>
+</kw>
+<kw name="Click Add Project button" library="Final_exam_keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Project_text}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230916 11:04:01.127" level="INFO">Clicking element '//div[text()='Projects']'.</msg>
+<status status="PASS" starttime="20230916 11:04:01.127" endtime="20230916 11:04:01.949"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Add_Project}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230916 11:04:01.953" level="INFO">Clicking element '//button[@aria-label='Add project']'.</msg>
+<status status="PASS" starttime="20230916 11:04:01.949" endtime="20230916 11:04:02.095"/>
+</kw>
+<status status="PASS" starttime="20230916 11:04:01.126" endtime="20230916 11:04:02.095"/>
+</kw>
+<kw name="Create Project successfull" library="Final_exam_keyword">
+<arg>Automation_MSB_Project</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${inp_name}</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230916 11:04:02.098" level="INFO">Typing text 'Automation_MSB_Project' into text field '//input[@name='name']'.</msg>
+<status status="PASS" starttime="20230916 11:04:02.097" endtime="20230916 11:04:02.516"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Add</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230916 11:04:02.519" level="INFO">Clicking button 'Add'.</msg>
+<status status="PASS" starttime="20230916 11:04:02.517" endtime="20230916 11:04:02.767"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//span[text()='${name}']</arg>
+<arg>3s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230916 11:04:02.768" endtime="20230916 11:04:02.795"/>
+</kw>
+<status status="PASS" starttime="20230916 11:04:02.095" endtime="20230916 11:04:02.796"/>
+</kw>
+<doc>Create Project</doc>
+<tag>Bai1</tag>
+<status status="PASS" starttime="20230916 11:03:47.985" endtime="20230916 11:04:02.796"/>
+</test>
+<status status="PASS" starttime="20230916 11:03:47.758" endtime="20230916 11:04:02.799"/>
+</suite>
+<status status="PASS" starttime="20230916 11:03:47.750" endtime="20230916 11:04:02.803"/>
+</suite>
+<status status="PASS" starttime="20230916 11:03:47.723" endtime="20230916 11:04:02.805"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Bai1</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Final Exam">Final Exam</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="5 Testcases">Final Exam.5 Testcases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Bai1">Final Exam.5 Testcases.Bai1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
+tamp="20230916 11:04:00.106" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=116.0.5845.188)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6136A52A2+57122]
+	(No symbol) [0x00007FF61361EA92]
+	(No symbol) [0x00007FF6134EE3AB]
+	(No symbol) [0x00007FF6134CE1B9]
+	(No symbol) [0x00007FF61354B417]
+	(No symbol) [0x00007FF61355E24F]
+	(No symbol) [0x00007FF613546DB3]
+	(No symbol) [0x00007FF61351D2B1]
+	(No symbol) [0x00007FF61351E494]
+	GetHandleVerifier [0x00007FF61394EF82+2849794]
+	GetHandleVerifier [0x00007FF6139A1D24+3189156]
+	GetHandleVerifier [0x00007FF61399ACAF+3160367]
+	GetHandleVerifier [0x00007FF613736D06+653702]
+	(No symbol) [0x00007FF61362A208]
+	(No symbol) [0x00007FF6136262C4]
+	(No symbol) [0x00007FF6136263F6]
+	(No symbol) [0x00007FF6136167A3]
+	BaseThreadInitThunk [0x00007FFF1BE026AD+29]
+	RtlUserThreadStart [0x00007FFF1D5CA9F8+40]
+</msg>
+<status status="FAIL" starttime="20230916 11:04:00.078" endtime="20230916 11:04:00.116"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//span[text()='${name}']</arg>
+<arg>3s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20230916 11:04:00.117" endtime="20230916 11:04:00.118"/>
+</kw>
+<status status="FAIL" starttime="20230916 10:47:19.710" endtime="20230916 11:04:00.118"/>
+</kw>
+<doc>Create Project</doc>
+<tag>Bai1</tag>
+<status status="FAIL" starttime="20230916 10:47:06.954" endtime="20230916 11:04:00.119">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=116.0.5845.188)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6136A52A2+57122]
+	(No symbol) [0x00007FF61361EA92]
+	(No symbol) [0x00007FF6134EE3AB]
+	(No symbol) [0x00007FF6134CE1B9]
+	(No symbol) [0x00007FF61354B417]
+	(No symbol) [0x00007FF61355E24F]
+	(No symbol) [0x00007FF613546DB3]
+	(No symbol) [0x00007FF61351D2B1]
+	(No symbol) [0x00007FF61351E494]
+	GetHandleVerifier [0x00007FF61394EF82+2849794]
+	GetHandleVerifier [0x00007FF6139A1D24+3189156]
+	GetHandleVerifier [0x00007FF61399ACAF+3160367]
+	GetHandleVerifier [0x00007FF613736D06+653702]
+	(No symbol) [0x00007FF61362A208]
+	(No symbol) [0x00007FF6136262C4]
+	(No symbol) [0x00007FF6136263F6]
+	(No symbol) [0x00007FF6136167A3]
+	BaseThreadInitThunk [0x00007FFF1BE026AD+29]
+	RtlUserThreadStart [0x00007FFF1D5CA9F8+40]
+</status>
+</test>
+<status status="FAIL" starttime="20230916 10:47:06.752" endtime="20230916 11:04:00.124"/>
+</suite>
+<status status="FAIL" starttime="20230916 10:47:06.746" endtime="20230916 11:04:00.128"/>
+</suite>
+<status status="FAIL" starttime="20230916 10:47:06.722" endtime="20230916 11:04:00.129"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Bai1</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Final Exam">Final Exam</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="5 Testcases">Final Exam.5 Testcases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Bai1">Final Exam.5 Testcases.Bai1</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230916 11:04:00.102" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=116.0.5845.188)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6136A52A2+57122]
+	(No symbol) [0x00007FF61361EA92]
+	(No symbol) [0x00007FF6134EE3AB]
+	(No symbol) [0x00007FF6134CE1B9]
+	(No symbol) [0x00007FF61354B417]
+	(No symbol) [0x00007FF61355E24F]
+	(No symbol) [0x00007FF613546DB3]
+	(No symbol) [0x00007FF61351D2B1]
+	(No symbol) [0x00007FF61351E494]
+	GetHandleVerifier [0x00007FF61394EF82+2849794]
+	GetHandleVerifier [0x00007FF6139A1D24+3189156]
+	GetHandleVerifier [0x00007FF61399ACAF+3160367]
+	GetHandleVerifier [0x00007FF613736D06+653702]
+	(No symbol) [0x00007FF61362A208]
+	(No symbol) [0x00007FF6136262C4]
+	(No symbol) [0x00007FF6136263F6]
+	(No symbol) [0x00007FF6136167A3]
+	BaseThreadInitThunk [0x00007FFF1BE026AD+29]
+	RtlUserThreadStart [0x00007FFF1D5CA9F8+40]
+</msg>
+</errors>
+</robot>
