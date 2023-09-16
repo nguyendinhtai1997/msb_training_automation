@@ -1,318 +1,274 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.9.0 on win32)" generated="20230907 19:34:36.317" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.9.0 on win32)" generated="20230916 15:43:46.185" rpa="false" schemaversion="4">
 <suite id="s1" name="Msb Training Automation" source="C:\Users\Lax Baor Trung\Desktop\Demo Auto\msb_training_automation">
-<suite id="s1-s1" name="5 Testcase" source="C:\Users\Lax Baor Trung\Desktop\Demo Auto\msb_training_automation\5_Testcase">
-<suite id="s1-s1-s1" name="Bài 4.guru99 telecom TC" source="C:\Users\Lax Baor Trung\Desktop\Demo Auto\msb_training_automation\5_Testcase\Bài 4.guru99_telecom_TC.robot">
-<test id="s1-s1-s1-t1" name="[TCs_01] - Thêm thông tin gói cước telecom" line="12">
-<kw name="Open Webpage" library="common" type="SETUP">
-<arg>https://demo.guru99.com/telecom/index.html</arg>
+<suite id="s1-s1" name="7 Bai test auto" source="C:\Users\Lax Baor Trung\Desktop\Demo Auto\msb_training_automation\7_Bai_test_auto">
+<suite id="s1-s1-s1" name="4.Testcase" source="C:\Users\Lax Baor Trung\Desktop\Demo Auto\msb_training_automation\7_Bai_test_auto\4.Testcase">
+<suite id="s1-s1-s1-s1" name="Bai 1 Todoist project" source="C:\Users\Lax Baor Trung\Desktop\Demo Auto\msb_training_automation\7_Bai_test_auto\4.Testcase\Bai 1_Todoist_project.robot">
+<test id="s1-s1-s1-s1-t1" name="[TCs_02] - Tao task Todoist" line="26">
+<kw name="Open Webpage" library="Common" type="SETUP">
+<arg>https://todoist.com/auth/login</arg>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>Firefox</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230907 19:34:36.466" level="INFO">Opening browser 'Firefox' to base url 'https://demo.guru99.com/telecom/index.html'.</msg>
-<status status="PASS" starttime="20230907 19:34:36.466" endtime="20230907 19:34:49.728"/>
+<msg timestamp="20230916 15:43:46.337" level="INFO">Opening browser 'Firefox' to base url 'https://todoist.com/auth/login'.</msg>
+<status status="PASS" starttime="20230916 15:43:46.336" endtime="20230916 15:43:53.708"/>
 </kw>
-<status status="PASS" starttime="20230907 19:34:36.465" endtime="20230907 19:34:49.728"/>
-</kw>
-<kw name="Find and select Element" library="Bài 4.guru99_telecom_keywords">
-<arg>${a_Add_Customer}</arg>
-<arg>${timeout}</arg>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<arg>${timeout}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230907 19:34:49.729" endtime="20230907 19:34:49.748"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230907 19:34:49.748" level="INFO">Clicking element '//a[@href="addcustomer.php"]'.</msg>
-<status status="PASS" starttime="20230907 19:34:49.748" endtime="20230907 19:34:49.768"/>
-</kw>
-<status status="PASS" starttime="20230907 19:34:49.729" endtime="20230907 19:34:49.768"/>
-</kw>
-<kw name="Reload Page" library="SeleniumLibrary">
-<doc>Simulates user reloading page.</doc>
-<status status="PASS" starttime="20230907 19:34:49.769" endtime="20230907 19:34:56.495"/>
-</kw>
-<kw name="Find and select Element" library="Bài 4.guru99_telecom_keywords">
-<arg>${a_Add_Customer}</arg>
-<arg>${timeout}</arg>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<arg>${timeout}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230907 19:34:56.496" endtime="20230907 19:34:56.506"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230907 19:34:56.506" level="INFO">Clicking element '//a[@href="addcustomer.php"]'.</msg>
-<status status="PASS" starttime="20230907 19:34:56.506" endtime="20230907 19:34:57.227"/>
-</kw>
-<status status="PASS" starttime="20230907 19:34:56.495" endtime="20230907 19:34:57.227"/>
-</kw>
-<kw name="Check element form" library="Bài 4.guru99_telecom_keywords">
-<arg>${inp_BGC}</arg>
-<arg>${timeout}</arg>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<arg>${timeout}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230907 19:34:57.228" endtime="20230907 19:34:57.256"/>
-</kw>
-<status status="PASS" starttime="20230907 19:34:57.227" endtime="20230907 19:34:57.256"/>
-</kw>
-<kw name="Find and select Element" library="Bài 4.guru99_telecom_keywords">
-<arg>${inp_BGC}</arg>
-<arg>${timeout}</arg>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<arg>${timeout}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230907 19:34:57.257" endtime="20230907 19:34:57.267"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230907 19:34:57.268" level="INFO">Clicking element '//section[@id='main']//label[@for='done']'.</msg>
-<status status="PASS" starttime="20230907 19:34:57.267" endtime="20230907 19:34:57.478"/>
-</kw>
-<status status="PASS" starttime="20230907 19:34:57.257" endtime="20230907 19:34:57.478"/>
-</kw>
-<kw name="Set Variable" library="BuiltIn">
-<var>${fname}</var>
-<arg>hang</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20230907 19:34:57.479" level="INFO">${fname} = hang</msg>
-<status status="PASS" starttime="20230907 19:34:57.479" endtime="20230907 19:34:57.479"/>
-</kw>
-<kw name="Set Variable" library="BuiltIn">
-<var>${lname}</var>
-<arg>anh</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20230907 19:34:57.480" level="INFO">${lname} = anh</msg>
-<status status="PASS" starttime="20230907 19:34:57.480" endtime="20230907 19:34:57.480"/>
+<status status="PASS" starttime="20230916 15:43:46.336" endtime="20230916 15:43:53.708"/>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <var>${email}</var>
-<arg>hanganh@gmail.com</arg>
+<arg>Hangvicc1404@gmail.com</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20230907 19:34:57.481" level="INFO">${email} = hanganh@gmail.com</msg>
-<status status="PASS" starttime="20230907 19:34:57.481" endtime="20230907 19:34:57.481"/>
+<msg timestamp="20230916 15:43:53.709" level="INFO">${email} = Hangvicc1404@gmail.com</msg>
+<status status="PASS" starttime="20230916 15:43:53.708" endtime="20230916 15:43:53.709"/>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
-<var>${address}</var>
-<arg>hanoi</arg>
+<var>${password}</var>
+<arg>Hang@nh442664</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20230907 19:34:57.482" level="INFO">${address} = hanoi</msg>
-<status status="PASS" starttime="20230907 19:34:57.482" endtime="20230907 19:34:57.482"/>
+<msg timestamp="20230916 15:43:53.710" level="INFO">${password} = Hang@nh442664</msg>
+<status status="PASS" starttime="20230916 15:43:53.710" endtime="20230916 15:43:53.710"/>
 </kw>
-<kw name="Set Variable" library="BuiltIn">
-<var>${phone}</var>
-<arg>0322222222</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20230907 19:34:57.483" level="INFO">${phone} = 0322222222</msg>
-<status status="PASS" starttime="20230907 19:34:57.483" endtime="20230907 19:34:57.483"/>
-</kw>
-<kw name="Input form Billing address" library="Bài 4.guru99_telecom_keywords">
-<arg>${inp_fname}</arg>
-<arg>${fname}</arg>
-<arg>${inp_lname}</arg>
-<arg>${lname}</arg>
+<kw name="Input text to locator" library="Bai 1.Todoist_keyword">
 <arg>${inp_email}</arg>
 <arg>${email}</arg>
-<arg>${inp_address}</arg>
-<arg>${address}</arg>
-<arg>${inp_phone}</arg>
-<arg>${phone}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${locator_fname}</arg>
-<arg>${fname}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230907 19:34:57.485" level="INFO">Typing text 'hang' into text field '//input[@id='fname']'.</msg>
-<status status="PASS" starttime="20230907 19:34:57.484" endtime="20230907 19:34:57.499"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${locator_lname}</arg>
-<arg>${lname}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230907 19:34:57.500" level="INFO">Typing text 'anh' into text field '//input[@id='lname']'.</msg>
-<status status="PASS" starttime="20230907 19:34:57.499" endtime="20230907 19:34:57.509"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${locator_email}</arg>
-<arg>${email}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230907 19:34:57.510" level="INFO">Typing text 'hanganh@gmail.com' into text field '//input[@id='email']'.</msg>
-<status status="PASS" starttime="20230907 19:34:57.509" endtime="20230907 19:34:57.527"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${locator_address}</arg>
-<arg>${address}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230907 19:34:57.528" level="INFO">Typing text 'hanoi' into text field '//textarea[@id='message']'.</msg>
-<status status="PASS" starttime="20230907 19:34:57.527" endtime="20230907 19:34:57.539"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${locator_phone}</arg>
-<arg>${phone}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230907 19:34:57.541" level="INFO">Typing text '0322222222' into text field '//input[@id='telephoneno']'.</msg>
-<status status="PASS" starttime="20230907 19:34:57.540" endtime="20230907 19:34:57.557"/>
-</kw>
-<status status="PASS" starttime="20230907 19:34:57.484" endtime="20230907 19:34:57.557"/>
-</kw>
-<kw name="Find and select Element" library="Bài 4.guru99_telecom_keywords">
-<arg>${btn_submit}</arg>
 <arg>${timeout}</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>${timeout}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230907 19:34:57.558" endtime="20230907 19:34:57.568"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230907 19:34:57.569" level="INFO">Clicking element '//input[@name='submit']'.</msg>
-<status status="PASS" starttime="20230907 19:34:57.568" endtime="20230907 19:34:58.272"/>
-</kw>
-<status status="PASS" starttime="20230907 19:34:57.557" endtime="20230907 19:34:58.272"/>
-</kw>
-<kw name="Get Customer ID" library="Bài 4.guru99_telecom_keywords">
-<var>${customerId}</var>
-<arg>${customer_id}</arg>
-<arg>${timeout}</arg>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<arg>${timeout}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230907 19:34:58.273" endtime="20230907 19:34:58.304"/>
-</kw>
-<kw name="Get Text" library="SeleniumLibrary">
-<var>${value}</var>
-<arg>${locator}</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230907 19:34:58.314" level="INFO">${value} = 202629</msg>
-<status status="PASS" starttime="20230907 19:34:58.304" endtime="20230907 19:34:58.314"/>
-</kw>
-<msg timestamp="20230907 19:34:58.314" level="INFO">${customerId} = 202629</msg>
-<status status="PASS" starttime="20230907 19:34:58.272" endtime="20230907 19:34:58.314"/>
-</kw>
-<kw name="Find and select Element" library="Bài 4.guru99_telecom_keywords">
-<arg>${btn_home}</arg>
-<arg>${timeout}</arg>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<arg>${timeout}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230907 19:34:58.316" endtime="20230907 19:34:58.325"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230907 19:34:58.326" level="INFO">Clicking element '//a[@class='button']'.</msg>
-<status status="PASS" starttime="20230907 19:34:58.325" endtime="20230907 19:34:58.460"/>
-</kw>
-<status status="PASS" starttime="20230907 19:34:58.315" endtime="20230907 19:34:58.460"/>
-</kw>
-<kw name="Find and select Element" library="Bài 4.guru99_telecom_keywords">
-<arg>${a_ATB_Customer}</arg>
-<arg>${timeout}</arg>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<arg>${timeout}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230907 19:34:58.461" endtime="20230907 19:34:58.500"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230907 19:34:58.501" level="INFO">Clicking element '//a[@href="assigntariffplantocustomer.php"]'.</msg>
-<status status="PASS" starttime="20230907 19:34:58.500" endtime="20230907 19:34:58.895"/>
-</kw>
-<status status="PASS" starttime="20230907 19:34:58.460" endtime="20230907 19:34:58.896"/>
-</kw>
-<kw name="Set Customer ID" library="Bài 4.guru99_telecom_keywords">
-<arg>${inp_customerid}</arg>
-<arg>${customerId}</arg>
-<arg>${timeout}</arg>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<arg>${timeout}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230907 19:34:58.897" endtime="20230907 19:34:58.934"/>
+<status status="PASS" starttime="20230916 15:43:53.711" endtime="20230916 15:43:55.377"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>${value}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230907 19:34:58.934" level="INFO">Typing text '202629' into text field '//input[@id='customer_id']'.</msg>
-<status status="PASS" starttime="20230907 19:34:58.934" endtime="20230907 19:34:58.946"/>
+<msg timestamp="20230916 15:43:55.378" level="INFO">Typing text 'Hangvicc1404@gmail.com' into text field '//input[@id="element-0"]'.</msg>
+<status status="PASS" starttime="20230916 15:43:55.377" endtime="20230916 15:43:55.447"/>
 </kw>
-<status status="PASS" starttime="20230907 19:34:58.896" endtime="20230907 19:34:58.946"/>
+<status status="PASS" starttime="20230916 15:43:53.711" endtime="20230916 15:43:55.447"/>
 </kw>
-<kw name="Find and select Element" library="Bài 4.guru99_telecom_keywords">
-<arg>${btn_submit2}</arg>
+<kw name="Input text to locator" library="Bai 1.Todoist_keyword">
+<arg>${inp_pwd}</arg>
+<arg>${password}</arg>
 <arg>${timeout}</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>${timeout}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230907 19:34:58.947" endtime="20230907 19:34:58.956"/>
+<status status="PASS" starttime="20230916 15:43:55.448" endtime="20230916 15:43:55.458"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230916 15:43:55.459" level="INFO">Typing text 'Hang@nh442664' into text field '//input[@id="element-3"]'.</msg>
+<status status="PASS" starttime="20230916 15:43:55.459" endtime="20230916 15:43:55.491"/>
+</kw>
+<status status="PASS" starttime="20230916 15:43:55.448" endtime="20230916 15:43:55.491"/>
+</kw>
+<kw name="Login" library="Bai 1.Todoist_keyword">
+<arg>${btn_Login}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230916 15:43:55.493" level="INFO">Clicking element '//button[@data-gtm-id="start-email-login"]'.</msg>
+<status status="PASS" starttime="20230916 15:43:55.492" endtime="20230916 15:43:55.715"/>
+</kw>
+<status status="PASS" starttime="20230916 15:43:55.491" endtime="20230916 15:43:55.716"/>
+</kw>
+<kw name="Hover Item" library="Bai 1.Todoist_keyword">
+<arg>${item_project}</arg>
+<arg>${timeout}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230916 15:43:55.716" endtime="20230916 15:44:00.294"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20230916 15:44:00.295" level="INFO">Simulating Mouse Over on element '//div[text()="Projects"]'.</msg>
+<status status="PASS" starttime="20230916 15:44:00.295" endtime="20230916 15:44:00.566"/>
+</kw>
+<status status="PASS" starttime="20230916 15:43:55.716" endtime="20230916 15:44:00.566"/>
+</kw>
+<kw name="Click Item" library="Bai 1.Todoist_keyword">
+<arg>${item_Addproject}</arg>
+<arg>${timeout}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230916 15:44:00.567" endtime="20230916 15:44:01.024"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230907 19:34:58.956" level="INFO">Clicking element '//input[@name='submit']'.</msg>
-<status status="PASS" starttime="20230907 19:34:58.956" endtime="20230907 19:34:59.356"/>
+<msg timestamp="20230916 15:44:01.025" level="INFO">Clicking element '//button[@aria-label="Add project"]'.</msg>
+<status status="PASS" starttime="20230916 15:44:01.024" endtime="20230916 15:44:01.272"/>
 </kw>
-<status status="PASS" starttime="20230907 19:34:58.947" endtime="20230907 19:34:59.356"/>
+<status status="PASS" starttime="20230916 15:44:00.566" endtime="20230916 15:44:01.273"/>
 </kw>
-<kw name="Verify result" library="common">
-<arg>${text_Approved}</arg>
+<kw name="Input text to locator" library="Bai 1.Todoist_keyword">
+<arg>${inp_projectname}</arg>
+<arg>${inp_Name_Project}</arg>
+<arg>${timeout}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230916 15:44:01.273" endtime="20230916 15:44:01.283"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230916 15:44:01.284" level="INFO">Typing text 'Automation_MSB_Project' into text field '//input[@id="edit_project_modal_field_name"]'.</msg>
+<status status="PASS" starttime="20230916 15:44:01.284" endtime="20230916 15:44:01.369"/>
+</kw>
+<status status="PASS" starttime="20230916 15:44:01.273" endtime="20230916 15:44:01.369"/>
+</kw>
+<kw name="Click Item" library="Bai 1.Todoist_keyword">
+<arg>${btn_Add}</arg>
+<arg>${timeout}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230916 15:44:01.371" endtime="20230916 15:44:01.379"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230916 15:44:01.379" level="INFO">Clicking element '//button[@type="submit"]'.</msg>
+<status status="PASS" starttime="20230916 15:44:01.379" endtime="20230916 15:44:01.713"/>
+</kw>
+<status status="PASS" starttime="20230916 15:44:01.370" endtime="20230916 15:44:01.714"/>
+</kw>
+<kw name="Click Item" library="Bai 1.Todoist_keyword">
+<arg>${btn_task}</arg>
+<arg>${timeout}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230916 15:44:01.715" endtime="20230916 15:44:01.725"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230916 15:44:01.725" level="INFO">Clicking element '//button[@class="plus_add_button"]'.</msg>
+<status status="PASS" starttime="20230916 15:44:01.725" endtime="20230916 15:44:02.005"/>
+</kw>
+<status status="PASS" starttime="20230916 15:44:01.714" endtime="20230916 15:44:02.006"/>
+</kw>
+<kw name="Click Item" library="Bai 1.Todoist_keyword">
+<arg>${inp_task}</arg>
+<arg>${timeout}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230916 15:44:02.007" endtime="20230916 15:44:02.018"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230916 15:44:02.019" level="INFO">Clicking element '//p[@data-placeholder="Task name"]'.</msg>
+<status status="PASS" starttime="20230916 15:44:02.018" endtime="20230916 15:44:02.758"/>
+</kw>
+<status status="PASS" starttime="20230916 15:44:02.006" endtime="20230916 15:44:02.759"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>${script_input_text}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230916 15:44:02.760" level="INFO">Executing JavaScript:
+document.querySelector('p[data-placeholder="Task name"]').innerText = "Automation_MSB_Task"
+Without any arguments.</msg>
+<status status="PASS" starttime="20230916 15:44:02.759" endtime="20230916 15:44:02.776"/>
+</kw>
+<kw name="Click Item" library="Bai 1.Todoist_keyword">
+<arg>${button_Add_task}</arg>
+<arg>${timeout}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230916 15:44:02.777" endtime="20230916 15:44:02.787"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230916 15:44:02.788" level="INFO">Clicking element '//button[@aria-label="Add task"]'.</msg>
+<status status="PASS" starttime="20230916 15:44:02.787" endtime="20230916 15:44:03.070"/>
+</kw>
+<status status="PASS" starttime="20230916 15:44:02.776" endtime="20230916 15:44:03.071"/>
+</kw>
+<kw name="Click Item" library="Bai 1.Todoist_keyword">
+<arg>${item_task}</arg>
+<arg>${timeout}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230916 15:44:03.072" endtime="20230916 15:44:03.081"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230916 15:44:03.082" level="INFO">Clicking element '//div[text()="Automation_MSB_Task"]'.</msg>
+<status status="PASS" starttime="20230916 15:44:03.081" endtime="20230916 15:44:03.497"/>
+</kw>
+<status status="PASS" starttime="20230916 15:44:03.071" endtime="20230916 15:44:03.498"/>
+</kw>
+<kw name="Verify result" library="Common">
+<arg>${verify_task}</arg>
 <arg>${timeout}</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${text}</arg>
 <arg>${timeout}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230907 19:34:59.357" endtime="20230907 19:34:59.384"/>
+<status status="PASS" starttime="20230916 15:44:03.499" endtime="20230916 15:44:03.537"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <arg>${text}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20230907 19:34:59.387" level="INFO">Current page contains element '//h2[text()="Approved Tariff Plans"]'.</msg>
-<status status="PASS" starttime="20230907 19:34:59.385" endtime="20230907 19:34:59.387"/>
+<msg timestamp="20230916 15:44:03.540" level="INFO">Current page contains element '//div[text()="Automation_MSB_Task"]'.</msg>
+<status status="PASS" starttime="20230916 15:44:03.538" endtime="20230916 15:44:03.541"/>
 </kw>
-<status status="PASS" starttime="20230907 19:34:59.357" endtime="20230907 19:34:59.387"/>
+<status status="PASS" starttime="20230916 15:44:03.498" endtime="20230916 15:44:03.541"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230907 19:34:59.388" endtime="20230907 19:35:01.966"/>
+<status status="PASS" starttime="20230916 15:44:03.541" endtime="20230916 15:44:06.232"/>
 </kw>
-<doc>Thêm thông tin gói cước telecom</doc>
-<tag>demo.guru99.com/telecom</tag>
-<status status="PASS" starttime="20230907 19:34:36.464" endtime="20230907 19:35:01.966"/>
+<doc>Task Todoist.com</doc>
+<tag>Task Todoist.com</tag>
+<status status="PASS" starttime="20230916 15:43:46.335" endtime="20230916 15:44:06.232"/>
 </test>
-<status status="PASS" starttime="20230907 19:34:36.337" endtime="20230907 19:35:01.967"/>
+<status status="PASS" starttime="20230916 15:43:46.208" endtime="20230916 15:44:06.233"/>
 </suite>
-<status status="PASS" starttime="20230907 19:34:36.335" endtime="20230907 19:35:01.969"/>
+<status status="PASS" starttime="20230916 15:43:46.206" endtime="20230916 15:44:06.235"/>
 </suite>
-<status status="PASS" starttime="20230907 19:34:36.319" endtime="20230907 19:35:01.970"/>
+<status status="PASS" starttime="20230916 15:43:46.204" endtime="20230916 15:44:06.237"/>
+</suite>
+<status status="PASS" starttime="20230916 15:43:46.188" endtime="20230916 15:44:06.238"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">demo.guru99.com/telecom</stat>
+<stat pass="1" fail="0" skip="0">Task Todoist.com</stat>
 </tag>
 <suite>
 <stat pass="1" fail="0" skip="0" id="s1" name="Msb Training Automation">Msb Training Automation</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="5 Testcase">Msb Training Automation.5 Testcase</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Bài 4.guru99 telecom TC">Msb Training Automation.5 Testcase.Bài 4.guru99 telecom TC</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="7 Bai test auto">Msb Training Automation.7 Bai test auto</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="4.Testcase">Msb Training Automation.7 Bai test auto.4.Testcase</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Bai 1 Todoist project">Msb Training Automation.7 Bai test auto.4.Testcase.Bai 1 Todoist project</stat>
 </suite>
 </statistics>
 <errors>

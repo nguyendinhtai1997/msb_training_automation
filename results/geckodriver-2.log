@@ -1,23 +1,26 @@
-1694089798004	geckodriver	INFO	Listening on 127.0.0.1:56214
-1694089801061	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56215" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LAXBAO~1\\AppData\\Local\\Temp\\rust_mozprofileIYt3Er"
-1694089801358	Marionette	INFO	Marionette enabled
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Lax Baor Trung\\AppData\\Local\\Temp\\rust_mozprofileIYt3Er\\search.json.mozlz4", (void 0)))
-DevTools listening on ws://localhost:56215/devtools/browser/686f92ad-b83f-4dcc-935b-652c0bfbc327
-1694089802891	Marionette	INFO	Listening on port 56244
-Read port: 56244
-1694089802939	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-1694089805318	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
-JavaScript warning: https://pagead2.googlesyndication.com/bg/YBinSErTekvxupjb6vinQNaPBzh8KEiIox6QinbqyX4.js line 2 > eval line 1047 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
-1694089812195	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
-1694089813249	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
-JavaScript warning: https://pagead2.googlesyndication.com/bg/YBinSErTekvxupjb6vinQNaPBzh8KEiIox6QinbqyX4.js line 2 > eval line 5892 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://demo.guru99.com"
-JavaScript error: https://demo.guru99.com/telecom/addcustomer.php, line 76: ReferenceError: v6 is not defined
-1694089820676	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://demo.guru99.com"
-JavaScript warning: https://pagead2.googlesyndication.com/bg/YBinSErTekvxupjb6vinQNaPBzh8KEiIox6QinbqyX4.js line 2 > eval line 3432 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
-1694089851947	Marionette	INFO	Stopped listening on port 56244
-console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1694853826536	geckodriver	INFO	Listening on 127.0.0.1:51394
+1694853829609	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51395" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LAXBAO~1\\AppData\\Local\\Temp\\rust_mozprofilehMvD6R"
+1694853829791	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Lax Baor Trung\\AppData\\Local\\Temp\\rust_mozprofilehMvD6R\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51395/devtools/browser/c0186eff-4d68-4861-a270-5662996bb27f
+1694853831355	Marionette	INFO	Listening on port 51414
+Read port: 51414
+1694853831378	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://todoist.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://todoist.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://todoist.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://todoist.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1694853842557	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:239:19
+TimedPromise@chrome://remote/content/marionette/sync.js:224:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://todoist.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1694853843542	Marionette	INFO	Stopped listening on port 51414
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 

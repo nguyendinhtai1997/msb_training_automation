@@ -9,7 +9,7 @@ Test Teardown    Close Browser
 ${timeout}    20s
 
 ** Test Cases **
-[TCs_01] - Demo Tiki
+    [TCs_01] - Demo Tiki
     [Documentation]    Demo Tiki 
     [Tags]    demo_tiki.vn
     ${inp_search}    Set Variable    nồi chiên
