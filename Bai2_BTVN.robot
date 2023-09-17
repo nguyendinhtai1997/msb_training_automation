@@ -3,18 +3,20 @@ Library     SeleniumLibrary
 
 
 *** Test Cases ***
-[TC_01] - Mua nồi chiên Tiki      #Tổng trừ    -0.7
+[TC_01] - Mua nồi chiên Tiki    # Tổng trừ    -0.7
     [Documentation]    Mua nồi chiên Tiki
     [Tags]    bai2_btvn_tiki
     Truy cập vào trang    https://tiki.vn/    chrome
     Nhập vào ô tìm kiếm    //input[@data-view-id='main_search_form_input']    nồi chiên
-    Sleep    2s       # đã có wait ở keyword dưới     - 0.1
+    Sleep    2s    # đã có wait ở keyword dưới    - 0.1
     Chọn gợi ý 'nồi chiên không dầu'
-    ...    //div[@class="style__StyledSuggestion-sc-1y3xjh6-0 gyELMq"]//a[@data-view-index="0"]       #chưa tối ưu xpath     //div[text() = "nồi chiên không dầu"]    -0.1
-    Sleep    2s    # đã có wait ở keyword dưới     - 0.1
-    Nhấn vào sản phẩm thứ 4 ở ds kết quả    //div[@data-view-id="product_list_container"]//div[4]    #xpath nếu lấy từ cha qua con thì dùng / , không dùng //    -0.1
+    ...    //div[@class="style__StyledSuggestion-sc-1y3xjh6-0 gyELMq"]//a[@data-view-index="0"]    # chưa tối ưu xpath    //div[text() = "nồi chiên không dầu"]    -0.1
+    Sleep    2s    # đã có wait ở keyword dưới    - 0.1
+    # xpath nếu lấy từ cha qua con thì dùng / , không dùng //    -0.1
+    Nhấn vào sản phẩm thứ 4 ở ds kết quả
+    ...    //div[@data-view-id="product_list_container"]//div[4]
     Ấn Button Chọn mua    //button[contains(text(),'Chọn mua')]
-    Sleep    5s    # đã có wait ở keyword dưới     - 0.1
+    Sleep    5s    # đã có wait ở keyword dưới    - 0.1
     Xác nhận popup chứa text    Xin chào
 
 

@@ -1,0 +1,13 @@
+phuongnv6
+2 bài đầu tiên để chung 1 file test case với tên là Bai_1 và Bai_2	-0.3
+chung 1 file test case nên mong muốn là dùng lại locator và keyword, anh lại đi tách ra riêng, mặc dù đã có ở bài còn lại -0.3
+không tạo file .gitignore để k upload lên các file không cần thiết -0.3
+sửa lại tên keyword "Tạo project Automation_MSB_Project", sau này muốn chạy lại câu này nhưng k muốn đặt tên này thì sao? -0.3
+phải hover vào //div[text()='Projects'] mới hiển thị ${btn_addpj}, vậy nên không thế tìm thấy và click vào ${btn_addpj} -0.3
+${btn_addpj}        //button[@aria-label = 'Add project']		nên lấy xpath của element ngắn và tối ưu nhất -0.2
+keyword "Xác nhận popup chứa text" sai về mục đích, phải là "Xác nhận project đã được tạo với tên" -0.3
+xpath của tên project phải verify chính xác, không dùng contains -0.3
+locator của tên project sai //div[contains(text(),'{${text}}')] -> //div[text() ='${text}']	-0.3
+bài 3 làm sai định dạng bài, nội dung API chưa đúng (method) chưa chạy được, đáp án có trong file Bai_3.js -2.0
+
+-4.6, tổng điểm 5.4

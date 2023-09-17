@@ -1,0 +1,11 @@
+*** Variables ***
+${inp_email}            //input[@id='element-0']
+${inp_pass}             //input[@id='element-3']
+${btn_submit}           //button[@type="submit"]
+${label_projects}       //div[text()='Projects']
+${btn_addpj}            //button[@aria-label = 'Add project']
+${inp_name}             //input[@id='edit_project_modal_field_name']
+${lbl_project}          //div[contains(text(),'Automation_MSB_Project')]
+${btn_addtask}          //button[@class="plus_add_button"]
+${inp_taskname}         //div[@aria-label="Task name"]
+${btn_addtask1}         //button[@aria-label="Add task"]
