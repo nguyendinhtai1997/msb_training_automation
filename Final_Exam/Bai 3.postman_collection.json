@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "c26517a4-c5c9-459d-8393-0fc2e275d00c",
+		"name": "Bai 3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7309357"
+	},
+	"item": [
+		{
+			"name": "https://api.todoist.com/rest/v2/projects",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Lay data tu file CSV\r",
+							"var status_code = pm.iterationData.get('status_code')\r",
+							"var name = pm.iterationData.get('name')\r",
+							"var color = pm.iterationData.get('color')\r",
+							"var view_style = pm.iterationData.get('view_style')\r",
+							" \r",
+							"//Set biến\r",
+							"var jsonData = pm.response.json();\r",
+							"\r",
+							"\r",
+							"pm.test(\"Check status code as CSV\", function () {\r",
+							"pm.response.to.have.status(status_code);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"Check name as CSV\", function () {\r",
+							"var jsonData = pm.response.json();\r",
+							" pm.expect(jsonData.name).to.eql(name);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check color as CSV\", function () {\r",
+							"var jsonData = pm.response.json();\r",
+							" pm.expect(jsonData.color).to.eql(color);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check view_style as CSV\", function () {\r",
+							"var jsonData = pm.response.json();\r",
+							" pm.expect(jsonData.view_style).to.eql(view_style);\r",
+							"});\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{api_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.todoist.com/rest/v2/projects",
+					"protocol": "https",
+					"host": [
+						"api",
+						"todoist",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v2",
+						"projects"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
