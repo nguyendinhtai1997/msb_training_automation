@@ -9,5 +9,6 @@ keyword "Xác nhận popup chứa text" sai về mục đích, phải là "Xác 
 xpath của tên project phải verify chính xác, không dùng contains -0.3
 locator của tên project sai //div[contains(text(),'{${text}}')] -> //div[text() ='${text}']	-0.3
 bài 3 làm sai định dạng bài, nội dung API chưa đúng (method) chưa chạy được, đáp án có trong file Bai_3.js -2.0
-
+nộp bài muộn 4p
 -4.6, tổng điểm 5.4
+
