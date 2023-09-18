@@ -1,8 +1,9 @@
 *** Settings ***
-Resource    ../import.robot
+Resource            ${EXECDIR}/import_btvn2.robot
 
-Test Setup    Open web    https://www.google.com/    chrome
-Test Teardown    Close Browser
+Test Setup          Open web    https://www.google.com/    chrome
+Test Teardown       Close Browser
+
 
 *** Test Cases ***
 Tc_o1_Truy cập web msb
@@ -13,4 +14,3 @@ Tc_o1_Truy cập web msb
     Click vào kết quả tìm kiếm đầu tiên    15s
     Tắt Popup    15s
     Verify trang có chứa "Chọn thẻ phù hợp với bạn"
-

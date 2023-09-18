@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../import.robot
+Resource    ${EXECDIR}/import_btvn2.robot
 
 Test Setup    Open web    https://demo.guru99.com/test/login.html    chrome
 Test Teardown    Close Browser

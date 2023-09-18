@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../import.robot
+Resource    ${EXECDIR}/import_btvn2.robot
 
 *** Keywords ***
 Mở trang web bằng trình duyệt
