@@ -1,0 +1,10 @@
+ngakh2
+cài đặt robotframework-tidy để format code đẹp hơn
+    pip install robotframework-tidy
+
+    chạy lệnh: robotidy [path cần format]
+chưa import -1.0
+theo yêu cầu đề bài, bài 1 và 2 cùng 1 file -0.3
+xpath không để ở test case -2
+Chưa làm bài 3 -2.0
+-4.3, tổng 4.7

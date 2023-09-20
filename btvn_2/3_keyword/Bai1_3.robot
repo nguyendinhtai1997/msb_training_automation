@@ -18,7 +18,7 @@ Button Tìm Kiếm
 
 Click vào kết quả tìm kiếm số mot
     [Arguments]    ${locator}    ${text}
-    Click Element   ${locator}    ${text}
+    Click Element    ${locator}    ${text}
 
 Tắt Popup
     [Arguments]    ${locator}    ${text}
@@ -27,4 +27,3 @@ Tắt Popup
 Verify trang có chứa Chọn thẻ phù hợp với bạn
     [Arguments]    ${locator}
     Element Should Be Visible    ${locator}
-    
