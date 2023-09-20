@@ -1,5 +1,5 @@
 *** Settings ***
-Resource            ${EXECDIR}/import_btvn2.robot
+Resource            ../../import_btvn2.robot
 
 Test Setup          Open web    https://www.google.com/    chrome
 Test Teardown       Close Browser

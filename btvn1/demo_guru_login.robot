@@ -1,9 +1,10 @@
 *** Settings ***
 Library     SeleniumLibrary
-
 # nên truyền biến từ test case -1.0
 # documentation cho test case -0.2
 # thêm file .gitignore để thêm các file không đẩy lên git như .png, output.xml    -0.2
+
+
 *** Test Cases ***
 Login_success
     [Tags]    login
@@ -26,4 +27,6 @@ Bấm signIN
     Click Button    //button[@id='SubmitLogin']
 
 verify login thành công
-    Page Should Contain Element    //h3[normalize-space()='Successfully Logged in...']    # nên dùng hàm text(), khó quá mới dùng hàm normalize-space()
+    # nên dùng hàm text(), khó quá mới dùng hàm normalize-space()
+    Page Should Contain Element
+    ...    //h3[normalize-space()='Successfully Logged in...']

@@ -1,5 +1,6 @@
 *** Settings ***
-Library    SeleniumLibrary
+Resource    ../../import_btvn2.robot
+
 
 *** Keywords ***
 Open web

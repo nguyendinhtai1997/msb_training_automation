@@ -1,5 +1,6 @@
 *** Settings ***
-Resource    ${EXECDIR}/import_btvn2.robot
+Resource    ../../import_btvn2.robot
+
 
 *** Keywords ***
 Open web tiki
@@ -23,8 +24,8 @@ Click vào sản phẩm nồi chiên thứ 4
 
 Click "Chọn mua"
     [Arguments]    ${timeout}
-    Wait Until Element Is Visible    ${btn_chonmua}     ${timeout}
-    Click Button    ${btn_chonmua} 
+    Wait Until Element Is Visible    ${btn_chonmua}    ${timeout}
+    Click Button    ${btn_chonmua}
 
 Verify popup có chứa "Xin chào"
     Wait Until Element Is Visible    ${Pu}

@@ -1,8 +1,9 @@
 *** Settings ***
-Resource    ${EXECDIR}/import_btvn2.robot
+Resource            ../../import_btvn2.robot
 
-Test Setup    Open web    https://tiki.vn/    chrome
-Test Teardown    Close Browser
+Test Setup          Open web    https://tiki.vn/    chrome
+Test Teardown       Close Browser
+
 
 *** Test Cases ***
 TC_timkiem
@@ -13,4 +14,3 @@ TC_timkiem
     Click vào sản phẩm nồi chiên thứ 4    10s
     Click "Chọn mua"    10s
     Verify popup có chứa "Xin chào"
-

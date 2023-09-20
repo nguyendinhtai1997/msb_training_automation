@@ -1,5 +1,6 @@
 *** Settings ***
-Resource    ${EXECDIR}/import_exam.robot
+Resource    ../../import_exam.robot
+
 
 *** Keywords ***
 Add task

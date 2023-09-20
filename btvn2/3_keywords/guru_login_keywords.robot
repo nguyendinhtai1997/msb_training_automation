@@ -1,9 +1,10 @@
 *** Settings ***
-Resource    ${EXECDIR}/import_btvn2.robot
+Resource    ../../import_btvn2.robot
+
 
 *** Keywords ***
 Mở trang web bằng trình duyệt
-    [Arguments]    ${url}    ${browser}    
+    [Arguments]    ${url}    ${browser}
     Open Browser    ${url}    ${browser}
 
 Login guru99 thành công
@@ -15,5 +16,4 @@ Login guru99 thành công
 
 Kiểm tra màn hình hiển thị chữ
     [Arguments]    ${text}    ${timeout}
-    Wait Until Element Is Visible    //h3[contains(text(), "${text}")]    ${timeout} 
-
+    Wait Until Element Is Visible    //h3[contains(text(), "${text}")]    ${timeout}

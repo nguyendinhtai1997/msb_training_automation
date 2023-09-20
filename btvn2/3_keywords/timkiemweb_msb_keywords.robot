@@ -1,5 +1,6 @@
 *** Settings ***
-Resource    ${EXECDIR}/import_btvn2.robot
+Resource    ../../import_btvn2.robot
+
 
 *** Keywords ***
 Click vào ô tìm kiềm và nhập từ khóa "MSB"
@@ -21,4 +22,4 @@ Tắt Popup
     Click Element    ${tat_pu}
 
 Verify trang có chứa "Chọn thẻ phù hợp với bạn"
-    Wait Until Element Is Visible    ${verify_trang}    
+    Wait Until Element Is Visible    ${verify_trang}

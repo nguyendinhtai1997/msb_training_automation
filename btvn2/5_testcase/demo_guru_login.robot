@@ -1,8 +1,9 @@
 *** Settings ***
-Resource    ${EXECDIR}/import_btvn2.robot
+Resource            ../../import_btvn2.robot
 
-Test Setup    Open web    https://demo.guru99.com/test/login.html    chrome
-Test Teardown    Close Browser
+Test Setup          Open web    https://demo.guru99.com/test/login.html    chrome
+Test Teardown       Close Browser
+
 
 *** Test Cases ***
 [TC_01] - Login and verify
