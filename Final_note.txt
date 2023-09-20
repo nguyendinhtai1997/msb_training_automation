@@ -2,5 +2,6 @@ ngannt29
 2 bài đầu tiên để chung 1 file test case với tên là Bai_1 và Bai_2	-0.3
 bài 3 nên tách riêng ra check cái gì, để sau lỗi thì dễ detect sai cái nào luôn -0.3
 trình bài chưa đẹp, các element k cần cách dòng ra làm gì -0.1
--0.7, tổng điểm 9.3
+nộp bài muộn -0.3
+-1, tổng điểm 9.0
 em làm bài rất tốt, cần phát huy :D
