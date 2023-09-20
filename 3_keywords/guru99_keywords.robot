@@ -1,7 +1,5 @@
 *** Settings ***
-Resource    ../2_elements/guru99_element.robot
-Resource    ../4_data/data.robot
-Library    SeleniumLibrary
+Resource    ../import.robot
 
 
 *** Keywords ***
@@ -26,8 +24,8 @@ Input customer information
 
 Get customer ID
     Wait Until Element Is Visible    ${label_customer_id}
-    ${value} =    Get Text     ${label_customer_id}
-    Set Global Variable     ${customer_id}    ${value}
+    ${value} =    Get Text    ${label_customer_id}
+    Set Global Variable    ${customer_id}    ${value}
     Click Element    ${btn_home}
 
 Goto Add Tariff Plan to Customer

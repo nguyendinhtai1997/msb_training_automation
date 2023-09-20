@@ -1,6 +1,6 @@
 *** Settings ***
 Resource    ../2_elements/tiki_elements.robot
-Library    SeleniumLibrary
+Library     SeleniumLibrary
 
 
 *** Keywords ***
@@ -9,7 +9,7 @@ Access to tiki page
     Maximize Browser Window
 
 Search item
-    [Arguments]   ${text}
+    [Arguments]    ${text}
     Input Text    ${field_search}    ${text}
 
 Select item from search list
@@ -21,7 +21,7 @@ Select item from search result
     Click Element    ${product_item_4}
 
 Click buy button
-    Wait Until Element Is Visible    ${btn_buy} 
+    Wait Until Element Is Visible    ${btn_buy}
     Click Element    ${btn_buy}
 
 Verify popup display text

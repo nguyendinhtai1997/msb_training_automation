@@ -2,7 +2,6 @@
 Resource    ../import.robot
 
 
-
 *** Test Cases ***
 [Guru99_TC_01] - Add customer
     [Documentation]    goru99 demo add customer

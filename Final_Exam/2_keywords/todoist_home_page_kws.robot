@@ -1,7 +1,5 @@
 *** Settings ***
-Resource    ../1_elements/todoist_home_page.robot
-Resource    ../4_data/data.robot
-Library   SeleniumLibrary
+Resource    ../import_exam.robot
 
 
 *** Keywords ***
@@ -16,15 +14,15 @@ Input Project infomation
     [Arguments]    ${prj_name}
     Wait Until Element Is Visible    ${lb_add_project_name}
     Input Text    ${lb_add_project_name}    ${prj_name}
-    Set Global Variable     ${project_name}    ${prj_name}
+    Set Global Variable    ${project_name}    ${prj_name}
 
 Click Submit Add Project button
     Click Element    ${btn_submit_add_project}
 
 Verify add porject successfuly with correct inputed information
     Wait Until Element Is Visible    ${lb_project_name}
-    ${value} =    Get Text     ${lb_project_name}
-    Should Be Equal   ${project_name}  ${value}
+    ${value} =    Get Text    ${lb_project_name}
+    Should Be Equal    ${project_name}    ${value}
 
 Select added project
     Click Element    ${btn_msb_training_prj}
@@ -36,7 +34,7 @@ Input task information
     [Arguments]    ${input_task_name}
     Wait Until Element Is Visible    ${lb_add_task_name}    20
     Input Text    ${lb_add_task_name}    ${input_task_name}
-    Set Global Variable     ${task_name}    ${input_task_name}
+    Set Global Variable    ${task_name}    ${input_task_name}
 
 Click submit add new task button
     Sleep    2
@@ -44,5 +42,5 @@ Click submit add new task button
 
 Verify add task successfully with correct inputed information
     Wait Until Element Is Visible    ${list_task}
-    ${value} =    Get Text     ${list_task}
-    Should Be Equal   ${task_name}  ${value}
+    ${value} =    Get Text    ${list_task}
+    Should Be Equal    ${task_name}    ${value}

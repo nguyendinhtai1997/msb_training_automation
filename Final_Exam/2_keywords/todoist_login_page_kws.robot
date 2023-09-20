@@ -1,6 +1,6 @@
 *** Settings ***
 Resource    ../1_elements/todoist_login_page.robot
-Library   SeleniumLibrary
+Library     SeleniumLibrary
 
 
 *** Keywords ***

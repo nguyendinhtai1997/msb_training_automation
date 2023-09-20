@@ -1,6 +1,6 @@
 *** Settings ***
 Resource    ../2_elements/msb_search_elements.robot
-Library    SeleniumLibrary
+Library     SeleniumLibrary
 
 
 *** Keywords ***

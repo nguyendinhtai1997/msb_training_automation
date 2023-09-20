@@ -1,0 +1,15 @@
+nhandt8
+cài đặt robotframework-tidy để format code đẹp hơn
+    pip install robotframework-tidy
+
+    chạy lệnh: robotidy [path cần format]
+Đề bài yêu cầu 2 bài cùng 1 file test case -0.3
+Element nằm ở folder 2_elements, k nằm ở 1_elements -0.3
+Đề bài yêu cầu 2 test case cùng 1 file -0.3
+bắt sai element 'Project' -0.5
+${lb_project_name} chỉ cần viết //*[text() = 'Automation_MSB_Project'] -0.3
+${list_task} chỉ cần viết //*[text() = 'Automation_MSB_Task'] -0.3
+không cần get text để so sánh(optional)
+chưa tạo file .gitignore để chặn những file k cần đẩy lên git -0.3
+Bai 3, nên tách từng bước so sánh ra để sau này có lỗi detect cho dễ -0.3
+-2.6, tổng điểm 7.4
