@@ -1,0 +1,5 @@
+nganht13
+Đề bài yêu cầu 2 bài cùng 1 file test case -0.3
+chưa tạo file .gitignore để chặn những file k cần đẩy lên git -0.3
+Bai 3 chưa làm -2.0
+-2.6, tổng điểm 7.4
