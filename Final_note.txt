@@ -1,0 +1,10 @@
+lynt27
+cài đặt robotframework-tidy để format code đẹp hơn
+    pip install robotframework-tidy
+
+    chạy lệnh: robotidy [path cần format]
+Chưa làm bài 3 -2.0
+Chưa làm bài 2 -2.0
+Code chạy vẫn sai -1.0
+-5.0, tổng 5.0
+em chấm bài chị hơi bị rộng rãi r đấy, k trừ điểm lặt vặt
