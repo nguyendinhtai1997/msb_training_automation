@@ -1,0 +1,14 @@
+hiennt61
+cài đặt robotframework-tidy để format code đẹp hơn
+    pip install robotframework-tidy
+
+    chạy lệnh: robotidy [path cần format]
+
+cả 2 bài 1 và 2 phải 1 file -0.3
+Bai_02_element chưa có Element -1.0
+Bai_02 chưa chạy đc - 1.0
+import sai file -0.5
+Element with locator '//input[@id = "element-0"]' not found -0.5
+viết bài 3 quá bản năng, thừa code quá nhiều, thiếu so sánh view_style -1.7
+
+tổng trừ -5.0, điểm 5.0
