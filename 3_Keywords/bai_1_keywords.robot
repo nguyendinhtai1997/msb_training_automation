@@ -1,23 +1,24 @@
 *** Settings ***
-Resource    ../2_Elements/Bài 3.google_element.robot
-Library   SeleniumLibrary
+Resource    ../import.robot
+
 
 *** Keywords ***
-Input search keyword
+Input key
     [Arguments]    ${locator}    ${value}    ${timeout}
     Wait Until Element Is Visible    ${locator}    ${timeout}
     Input Text    ${locator}    ${value}
 
-Search keyword
-    [Arguments]    ${locator}
-    Press Keys    ${locator}    ENTER
-
-Choice first result
+Select key suggest
     [Arguments]    ${locator}    ${timeout}
     Wait Until Element Is Visible    ${locator}    ${timeout}
     Click Element    ${locator}
 
-Close popup
-    [Arguments]    ${locator}    ${script}    ${timeout}
+Choice product
+    [Arguments]    ${locator}    ${timeout}
     Wait Until Element Is Visible    ${locator}    ${timeout}
-    Execute JavaScript    ${script}
+    Click Element    ${locator}
+
+Buy product
+    [Arguments]    ${locator}    ${timeout}
+    Wait Until Element Is Visible    ${locator}    ${timeout}
+    Click Element    ${locator}

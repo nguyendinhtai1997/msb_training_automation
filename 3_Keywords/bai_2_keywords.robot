@@ -1,6 +1,6 @@
 *** Settings ***
-Resource    ../2_Elements/Bài 2.Guru_99_element.robot
-Library   SeleniumLibrary
+Resource    ../import.robot
+
 
 *** Keywords ***
 Check element

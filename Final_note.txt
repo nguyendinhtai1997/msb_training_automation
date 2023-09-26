@@ -1,0 +1,14 @@
+hanglt26
+cài đặt robotframework-tidy để format code đẹp hơn
+    pip install robotframework-tidy
+
+    chạy lệnh: robotidy [path cần format]
+
+Tag viết liền chị nhé -0.3
+Code chạy không được 2 bài -1.0
+Import để ở ngoài -0.5
+Import thiếu khá nhiều -0.5
+Các file chỉ cần import 1 file import là đủ, đã nói ở buổi 2 -0.5
+Bài 3 làm tốt
+Đã sửa lại cấu trúc của bài tập về nhà buổi 2
+tổng trừ -2.8. điểm 7.2

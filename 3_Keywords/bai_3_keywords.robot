@@ -1,24 +1,23 @@
 *** Settings ***
-Resource    ../2_Elements/Bài 1.Tiki_element.robot
-Library   SeleniumLibrary
+Resource    ../import.robot
+
 
 *** Keywords ***
-Input key
+Input search keyword
     [Arguments]    ${locator}    ${value}    ${timeout}
     Wait Until Element Is Visible    ${locator}    ${timeout}
     Input Text    ${locator}    ${value}
 
-Select key suggest
+Search keyword
+    [Arguments]    ${locator}
+    Press Keys    ${locator}    ENTER
+
+Choice first result
     [Arguments]    ${locator}    ${timeout}
     Wait Until Element Is Visible    ${locator}    ${timeout}
     Click Element    ${locator}
 
-Choice product
-    [Arguments]    ${locator}    ${timeout}
+Close popup
+    [Arguments]    ${locator}    ${script}    ${timeout}
     Wait Until Element Is Visible    ${locator}    ${timeout}
-    Click Element    ${locator}
-
-Buy product
-    [Arguments]    ${locator}    ${timeout}
-    Wait Until Element Is Visible    ${locator}    ${timeout}
-    Click Element    ${locator}
+    Execute JavaScript    ${script}

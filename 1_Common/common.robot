@@ -1,7 +1,6 @@
 *** Settings ***
-Library   SeleniumLibrary
+Library     SeleniumLibrary
 
-*** Variables ***
 
 *** Keywords ***
 Open Webpage

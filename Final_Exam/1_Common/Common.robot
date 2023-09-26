@@ -1,9 +1,11 @@
 *** Settings ***
-Library   SeleniumLibrary
+Resource    ../import_exam.robot
+
 
 *** Variables ***
-${brower}   Firefox
-${Shared_Variable}   Initial Value
+${brower}               chrome
+${Shared_Variable}      Initial Value
+
 
 *** Keywords ***
 Open Webpage
@@ -20,13 +22,13 @@ Set Shared Variable
     Set Global Variable    ${Shared_Variable}    ${value}
 
 Get Shared Variable
-    [Return]    ${Shared_Variable}
+    RETURN    ${Shared_Variable}
 
 Click Item
     [Arguments]    ${locator}    ${timeout}
     Wait Until Element Is Visible    ${locator}    ${timeout}
     Click Element    ${locator}
-    
+
 Input text to locator
     [Arguments]    ${locator}    ${value}    ${timeout}
     Wait Until Element Is Visible    ${locator}    ${timeout}

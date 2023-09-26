@@ -1,10 +1,11 @@
 *** Settings ***
-Resource    ../2_Elements/Bài 4.guru99_telecom_element.robot
-Resource    ../6_Report/import.robot
-Library   SeleniumLibrary
+Resource    ../import.robot
+
 
 *** Variables ***
-${key_customerId}    customerId
+${key_customerId}       customerId
+
+
 *** Keywords ***
 Find and select Element
     [Arguments]    ${locator}    ${timeout}
@@ -37,7 +38,7 @@ Get Customer ID
     [Arguments]    ${locator}    ${timeout}
     Wait Until Element Is Visible    ${locator}    ${timeout}
     ${value}=    Get Text    ${locator}
-    [Return]    ${value}
+    RETURN    ${value}
 
 Set Customer ID
     [Arguments]    ${locator}    ${value}    ${timeout}
